@@ -317,6 +317,36 @@ const Auth = () => {
 
           <h2 className="text-lg font-semibold mb-4 text-center">{getTitle()}</h2>
 
+          {/* Prominent Sign In / Sign Up tab toggle. Users complained they
+              couldn't tell the two apart or how to switch — this makes the
+              choice obvious on every visit. Hidden during recovery flows. */}
+          {(mode === "signIn" || mode === "signUp") && (
+            <div className="grid grid-cols-2 gap-1 p-1 mb-4 rounded-lg bg-muted/60 border border-border">
+              <button
+                type="button"
+                onClick={() => setMode("signIn")}
+                className={`py-2 text-sm font-semibold rounded-md transition-colors ${
+                  mode === "signIn"
+                    ? "bg-background shadow text-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Sign in
+              </button>
+              <button
+                type="button"
+                onClick={() => setMode("signUp")}
+                className={`py-2 text-sm font-semibold rounded-md transition-colors ${
+                  mode === "signUp"
+                    ? "bg-background shadow text-foreground"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Create account
+              </button>
+            </div>
+          )}
+
           <form onSubmit={handleSubmit} className="space-y-4">
             {mode === "signUp" && (
               <div className="space-y-2">

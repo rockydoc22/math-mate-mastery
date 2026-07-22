@@ -269,7 +269,7 @@ const K12AdaptiveTutor = () => {
           </Button>
           <div className="flex items-center gap-2">
             <Brain className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Adaptive Tutor</span>
+            <span className="text-sm font-medium">AI Assistant</span>
           </div>
           <span className="text-sm font-medium text-primary">
             {sessionScore}/{sessionTotal}

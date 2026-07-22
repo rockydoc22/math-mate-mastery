@@ -38,7 +38,7 @@ const HighSchoolExams = () => {
       />
       <div className="max-w-lg mx-auto space-y-5 animate-in fade-in duration-300">
         <div className="flex items-center gap-2 pt-2">
-          <Button variant="ghost" size="sm" onClick={() => navigate("/")} className="gap-1">
+          <Button variant="ghost" size="sm" onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))} className="gap-1">
             <ArrowLeft className="w-4 h-4" /> Back
           </Button>
         </div>

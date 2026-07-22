@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ChevronRight, Calendar, Brain } from "lucide-react";
+import { ArrowLeft, ChevronRight, Calendar, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
+import { useAIAssistant } from "@/hooks/useAIAssistant";
 import { useNavigate } from "react-router-dom";
 import { K12_EXAMS } from "@/utils/k12ExamConfig";
 import { loadK12ExamQuestions } from "@/data/k12Questions";
@@ -40,6 +42,7 @@ const K12Exams = () => {
   const navigate = useNavigate();
   const [questionCounts, setQuestionCounts] = useState<Record<string, number>>({});
   const [loadingCounts, setLoadingCounts] = useState(true);
+  const { enabled: aiAssistantOn } = useAIAssistant();
 
   useEffect(() => {
     // Load counts for all exams in parallel
@@ -65,7 +68,7 @@ const K12Exams = () => {
       />
       <div className="max-w-lg mx-auto space-y-5 animate-in fade-in duration-300">
         <div className="flex items-center gap-2 pt-2">
-          <Button variant="ghost" size="sm" onClick={() => navigate("/")} className="gap-1">
+          <Button variant="ghost" size="sm" onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))} className="gap-1">
             <ArrowLeft className="w-4 h-4" /> Back
           </Button>
         </div>
@@ -76,29 +79,45 @@ const K12Exams = () => {
         </div>
 
         <ConsentGate consentType="k12_ip" consentKey="k12_disclaimer" title="Important Disclaimer" disclaimerText={K12_DISCLAIMER} checkboxLabel={K12_CHECKBOX}>
-          {/* Daily Challenge + Adaptive Tutor shortcuts */}
-          <div className="grid grid-cols-2 gap-3 mb-4">
-            <Card
-              className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:scale-[1.01] hover:shadow-md bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20"
-              onClick={() => navigate("/k12-daily")}
-            >
-              <div className="text-center space-y-1">
-                <Calendar className="w-6 h-6 mx-auto text-orange-500" />
-                <h2 className="font-bold text-sm">Daily Challenge</h2>
-                <p className="text-[10px] text-muted-foreground">Unique daily questions targeting your weak skills</p>
+          {/* Daily Challenge is the primary entry point — it's the friendliest
+              way in and the one most students should try first. AI Assistant
+              (formerly "Adaptive Tutor") is optional and can be turned off in
+              Settings; when off we hide the card entirely. */}
+          <Card
+            className="p-5 border-2 cursor-pointer transition-all hover:border-primary/40 hover:scale-[1.01] hover:shadow-md bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/20 dark:to-amber-950/20 mb-3"
+            onClick={() => navigate("/k12-daily")}
+          >
+            <div className="flex items-center gap-3">
+              <Calendar className="w-8 h-8 text-orange-500 shrink-0" />
+              <div className="flex-1">
+                <h2 className="font-bold">Daily Challenge</h2>
+                <p className="text-xs text-muted-foreground">Start here — a fresh mini-set every day, tuned to your weak skills.</p>
               </div>
-            </Card>
+              <ChevronRight className="w-5 h-5 text-muted-foreground" />
+            </div>
+          </Card>
+
+          {aiAssistantOn && (
             <Card
-              className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:scale-[1.01] hover:shadow-md bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-950/20 dark:to-purple-950/20"
+              className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:scale-[1.01] hover:shadow-md bg-gradient-to-br from-violet-50 to-purple-50 dark:from-violet-950/20 dark:to-purple-950/20 mb-2"
               onClick={() => navigate("/k12-tutor/ged")}
             >
-              <div className="text-center space-y-1">
-                <Brain className="w-6 h-6 mx-auto text-primary" />
-                <h2 className="font-bold text-sm">Adaptive Tutor</h2>
-                <p className="text-[10px] text-muted-foreground">AI-powered hints & difficulty that adapts to you</p>
+              <div className="flex items-center gap-3">
+                <Sparkles className="w-6 h-6 text-primary shrink-0" />
+                <div className="flex-1">
+                  <h2 className="font-bold text-sm">AI Assistant <span className="text-[10px] font-normal text-muted-foreground">(optional)</span></h2>
+                  <p className="text-[11px] text-muted-foreground">Hints and difficulty that adapt to you. Skip it any time.</p>
+                </div>
               </div>
             </Card>
-          </div>
+          )}
+          <p className="text-[11px] text-muted-foreground mb-4 text-center">
+            {aiAssistantOn ? (
+              <>Prefer to study without the AI? <Link to="/settings#ai-assistant" className="text-primary hover:underline">Turn AI Assistant off</Link></>
+            ) : (
+              <>AI Assistant is off. <Link to="/settings#ai-assistant" className="text-primary hover:underline">Turn it back on</Link></>
+            )}
+          </p>
 
           <div className="space-y-3">
             {K12_EXAMS.map((exam) => {

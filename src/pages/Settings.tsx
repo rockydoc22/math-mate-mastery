@@ -7,9 +7,11 @@ import { Label } from "@/components/ui/label";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { ArrowLeft, Lock, Eye, EyeOff, GraduationCap, User, Loader2 } from "lucide-react";
+import { ArrowLeft, Lock, Eye, EyeOff, GraduationCap, User, Loader2, Sparkles } from "lucide-react";
 import { useExamType } from "@/hooks/useExamType";
 import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
+import { useAIAssistant } from "@/hooks/useAIAssistant";
+import { Switch } from "@/components/ui/switch";
 
 const validatePassword = (password: string): { valid: boolean; error?: string } => {
   if (password.length < 8) {
@@ -40,6 +42,7 @@ const Settings = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const passwordSectionRef = useRef<HTMLFormElement>(null);
+  const { disabled: aiOff, setDisabled: setAiOff } = useAIAssistant();
 
   // Load current username
   useEffect(() => {
@@ -118,12 +121,12 @@ const Settings = () => {
         <h1 className="sr-only">Account Settings</h1>
         <button
           type="button"
-            aria-label="Back to home"
+          aria-label="Go back"
           className="flex items-center gap-1 text-muted-foreground hover:text-foreground text-sm"
-          onClick={() => navigate("/")}
+          onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))}
         >
           <ArrowLeft className="w-4 h-4" />
-          Back to home
+          Back
         </button>
 
         <Card>
@@ -196,6 +199,30 @@ const Settings = () => {
             <div className="pt-4 border-t">
               <Label className="text-muted-foreground">Email</Label>
               <p className="font-medium">{user.email}</p>
+            </div>
+
+            {/* AI Assistant preference — global switch that hides the tutor
+                across the app. Anchored id lets us deep-link here from
+                homeschool prompts. */}
+            <div id="ai-assistant" className="space-y-3 pt-4 border-t">
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex items-center gap-2 min-w-0">
+                  <Sparkles className="w-4 h-4 text-primary shrink-0" />
+                  <div className="min-w-0">
+                    <Label className="font-semibold block">AI Assistant</Label>
+                    <p className="text-xs text-muted-foreground">
+                      Adaptive hints and difficulty adjustments across practice.
+                      Turn off if you prefer to study without AI help. Real
+                      practice tests always disable it automatically.
+                    </p>
+                  </div>
+                </div>
+                <Switch
+                  checked={!aiOff}
+                  onCheckedChange={(v) => setAiOff(!v)}
+                  aria-label="Toggle AI Assistant"
+                />
+              </div>
             </div>
 
             <form ref={passwordSectionRef} onSubmit={handleChangePassword} className="space-y-4">

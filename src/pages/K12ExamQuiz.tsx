@@ -2,6 +2,40 @@ import { useState, useEffect, useMemo, useCallback } from "react";
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useAIAssistant, disableAIAssistantForSession } from "@/hooks/useAIAssistant";
+import { Link } from "react-router-dom";
+import { Sparkles } from "lucide-react";
+
+function K12AIAssistantCard({ onOpen }: { onOpen: () => void }) {
+  const { enabled, disableForSession, sessionDisabled } = useAIAssistant();
+  if (!enabled) return null;
+  return (
+    <Card
+      className="p-4 border-2 transition-all hover:border-primary/30 hover:shadow-md bg-gradient-to-r from-primary/5 to-accent/5"
+    >
+      <div className="flex items-center gap-3">
+        <Sparkles className="w-6 h-6 text-primary shrink-0" />
+        <div className="flex-1 cursor-pointer" onClick={onOpen}>
+          <h3 className="font-bold text-sm">AI Assistant <span className="text-[10px] font-normal text-muted-foreground">(optional)</span></h3>
+          <p className="text-[10px] text-muted-foreground">Hints & adaptive difficulty. Skip any time.</p>
+        </div>
+      </div>
+      <div className="flex items-center justify-between mt-2 pt-2 border-t border-border/60 gap-2">
+        <button
+          type="button"
+          className="text-[10px] text-muted-foreground hover:text-foreground underline"
+          onClick={disableForSession}
+          disabled={sessionDisabled}
+        >
+          {sessionDisabled ? "Off for this session ✓" : "Turn off for this test"}
+        </button>
+        <Link to="/settings#ai-assistant" className="text-[10px] text-primary hover:underline">
+          Turn off in Settings
+        </Link>
+      </div>
+    </Card>
+  );
+}
 import { ArrowLeft, Clock, CheckCircle2, XCircle, RotateCcw, Filter, Flag, Brain } from "lucide-react";
 import { getK12Exam } from "@/utils/k12ExamConfig";
 import { loadK12ExamQuestions, getK12QuestionsBySubject } from "@/data/k12Questions";
@@ -270,19 +304,9 @@ const K12ExamQuiz = () => {
           <p className="text-sm text-muted-foreground">{allQuestions.length.toLocaleString()} questions available</p>
         </div>
 
-        {/* Adaptive Tutor */}
-        <Card
-          className="p-4 border-2 cursor-pointer transition-all hover:border-primary/30 hover:shadow-md bg-gradient-to-r from-primary/5 to-accent/5"
-          onClick={() => navigate(`/k12-tutor/${examId}`)}
-        >
-          <div className="flex items-center gap-3">
-            <Brain className="w-6 h-6 text-primary" />
-            <div>
-              <h3 className="font-bold text-sm">Adaptive Tutor</h3>
-              <p className="text-[10px] text-muted-foreground">AI hints & auto-adjusting difficulty</p>
-            </div>
-          </div>
-        </Card>
+        {/* AI Assistant card — hidden entirely when the user has turned it
+            off globally in Settings. */}
+        <K12AIAssistantCard onOpen={() => navigate(`/k12-tutor/${examId}`)} />
 
         {/* Difficulty filter */}
         <div className="space-y-2">
