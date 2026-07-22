@@ -128,7 +128,7 @@ export default function AnagramSprint() {
     nextWord();
   };
 
-  const shuffleLetters = () => setScrambled(scramble(word));
+  const shuffleLetters = () => setScrambled(scramble(entry.word));
 
   const timerColor = timeLeft <= 10 ? "text-destructive" : timeLeft <= 20 ? "text-amber-600" : "text-primary";
 
