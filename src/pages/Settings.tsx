@@ -212,6 +212,115 @@ const Settings = () => {
                   );
                 })}
               </div>
+              <p className="text-[11px] text-muted-foreground">
+                Studying something else (AP, MCAT, GRE, LSAT, GMAT, Iowa, MAP, GED…)?
+              </p>
+              <Button
+                variant="outline"
+                size="sm"
+                className="w-full gap-2"
+                onClick={() => navigate("/tests")}
+              >
+                <Search className="w-4 h-4" /> Browse all 50+ tests
+              </Button>
+            </div>
+
+            {/* Age band — self-reported, non-clinical */}
+            <div className="space-y-3 pt-4 border-t">
+              <div className="flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-primary" />
+                <Label className="font-semibold">Age group</Label>
+              </div>
+              <div className="grid grid-cols-3 gap-2">
+                {[
+                  { v: "elementary", l: "K-5" },
+                  { v: "middle", l: "6-8" },
+                  { v: "high", l: "9-12" },
+                  { v: "college", l: "College" },
+                  { v: "grad", l: "Grad" },
+                  { v: "adult", l: "Adult" },
+                ].map(a => (
+                  <Button
+                    key={a.v}
+                    variant={ageBand === a.v ? "default" : "outline"}
+                    size="sm"
+                    className="text-xs"
+                    onClick={async () => {
+                      setAgeBand(a.v);
+                      await supabase.from("profiles").update({ age_band: a.v } as any).eq("id", user.id);
+                      toast({ title: `Age group set: ${a.l}` });
+                    }}
+                  >
+                    {a.l}
+                  </Button>
+                ))}
+              </div>
+              <p className="text-[11px] text-muted-foreground">
+                Used to tailor difficulty and vocabulary. We never ask for a birthdate here.
+              </p>
+            </div>
+
+            {/* Self-rated strengths */}
+            <div className="space-y-3 pt-4 border-t">
+              <div className="flex items-center gap-2">
+                <Target className="w-4 h-4 text-primary" />
+                <Label className="font-semibold">Your strengths</Label>
+              </div>
+              <p className="text-[11px] text-muted-foreground">
+                Rate yourself 1 (needs work) to 5 (strong). We use this to weight practice.
+              </p>
+              <div className="space-y-2">
+                {[
+                  { k: "math", l: "Math" },
+                  { k: "reading", l: "Reading" },
+                  { k: "vocabulary", l: "Vocabulary" },
+                  { k: "writing", l: "Writing" },
+                  { k: "science", l: "Science" },
+                ].map(s => (
+                  <div key={s.k} className="flex items-center justify-between gap-3">
+                    <span className="text-sm w-24 shrink-0">{s.l}</span>
+                    <div className="flex gap-1 flex-1 justify-end">
+                      {[1, 2, 3, 4, 5].map(n => (
+                        <button
+                          key={n}
+                          type="button"
+                          aria-label={`${s.l} ${n}`}
+                          onClick={() => setRatings(r => ({ ...r, [s.k]: n }))}
+                          className={`w-7 h-7 rounded-md border text-xs font-semibold transition ${
+                            ratings[s.k] >= n
+                              ? "bg-primary text-primary-foreground border-primary"
+                              : "bg-muted/40 border-border hover:border-primary/40"
+                          }`}
+                        >
+                          {n}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <Button
+                size="sm"
+                className="w-full"
+                disabled={prefsSaving}
+                onClick={async () => {
+                  setPrefsSaving(true);
+                  try {
+                    const { error } = await supabase
+                      .from("profiles")
+                      .update({ self_ratings: ratings } as any)
+                      .eq("id", user.id);
+                    if (error) throw error;
+                    toast({ title: "Strengths saved ✨" });
+                  } catch (e: any) {
+                    toast({ title: "Error", description: e.message, variant: "destructive" });
+                  } finally {
+                    setPrefsSaving(false);
+                  }
+                }}
+              >
+                {prefsSaving ? <Loader2 className="w-4 h-4 animate-spin" /> : "Save strengths"}
+              </Button>
             </div>
 
             <div className="pt-4 border-t">
