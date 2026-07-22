@@ -36,6 +36,30 @@ function logKey(userId?: string | null) {
   return `aoGameLog:${userId ?? "anon"}`;
 }
 
+// Snapshot of the last stats value we pushed to (or pulled from) the remote
+// on this device. Used to compute additive deltas so a second device does
+// not overwrite points/rounds earned on the first.
+function syncKey(userId?: string | null) {
+  return `aoGameStatsSynced:${userId ?? "anon"}`;
+}
+
+function readSyncSnapshot(userId?: string | null): GameZoneStats | null {
+  try {
+    const raw = localStorage.getItem(syncKey(userId));
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    return { ...EMPTY, ...parsed, perGame: { ...EMPTY.perGame, ...(parsed.perGame ?? {}) } };
+  } catch {
+    return null;
+  }
+}
+
+function writeSyncSnapshot(userId: string | null | undefined, stats: GameZoneStats) {
+  try {
+    localStorage.setItem(syncKey(userId), JSON.stringify(stats));
+  } catch {}
+}
+
 export type UsageLogEntry = { date: string; game: string; points: number };
 
 function todayISO() {
@@ -110,29 +134,46 @@ async function pullRemoteStats(userId: string): Promise<GameZoneStats | null> {
   };
 }
 
-function mergeStats(a: GameZoneStats, b: GameZoneStats): GameZoneStats {
-  const perGame: GameZoneStats["perGame"] = { ...a.perGame };
-  for (const key of Object.keys(b.perGame)) {
-    const av = perGame[key] ?? { high: 0, played: 0 };
-    const bv = b.perGame[key];
+// Additive merge using a per-device sync snapshot. Cumulative counters
+// (totalPoints, roundsPlayed, perGame.played) apply the local delta since
+// the last sync on top of the remote value, so plays from another device
+// are preserved. High-water values use max; best times use min.
+function mergeStats(
+  local: GameZoneStats,
+  remote: GameZoneStats,
+  snapshot: GameZoneStats | null
+): GameZoneStats {
+  const base = snapshot ?? EMPTY;
+  const delta = (l: number, s: number) => Math.max(0, l - s);
+
+  const perGame: GameZoneStats["perGame"] = { ...remote.perGame };
+  const keys = new Set([
+    ...Object.keys(local.perGame),
+    ...Object.keys(remote.perGame),
+    ...Object.keys(base.perGame ?? {}),
+  ]);
+  for (const key of keys) {
+    const lv = local.perGame[key] ?? { high: 0, played: 0 };
+    const rv = remote.perGame[key] ?? { high: 0, played: 0 };
+    const sv = (base.perGame ?? {})[key] ?? { high: 0, played: 0 };
     perGame[key] = {
-      high: Math.max(av.high, bv.high),
-      played: Math.max(av.played, bv.played),
+      high: Math.max(lv.high, rv.high),
+      played: rv.played + delta(lv.played, sv.played),
       bestTimeMs:
-        av.bestTimeMs != null && bv.bestTimeMs != null
-          ? Math.min(av.bestTimeMs, bv.bestTimeMs)
-          : av.bestTimeMs ?? bv.bestTimeMs,
+        lv.bestTimeMs != null && rv.bestTimeMs != null
+          ? Math.min(lv.bestTimeMs, rv.bestTimeMs)
+          : lv.bestTimeMs ?? rv.bestTimeMs,
     };
   }
   const fastest =
-    a.fastestSolveMs != null && b.fastestSolveMs != null
-      ? Math.min(a.fastestSolveMs, b.fastestSolveMs)
-      : a.fastestSolveMs ?? b.fastestSolveMs;
+    local.fastestSolveMs != null && remote.fastestSolveMs != null
+      ? Math.min(local.fastestSolveMs, remote.fastestSolveMs)
+      : local.fastestSolveMs ?? remote.fastestSolveMs;
   return {
-    totalPoints: Math.max(a.totalPoints, b.totalPoints),
-    streak: Math.max(a.streak, b.streak),
-    bestStreak: Math.max(a.bestStreak, b.bestStreak),
-    roundsPlayed: Math.max(a.roundsPlayed, b.roundsPlayed),
+    totalPoints: remote.totalPoints + delta(local.totalPoints, base.totalPoints),
+    streak: Math.max(local.streak, remote.streak),
+    bestStreak: Math.max(local.bestStreak, remote.bestStreak),
+    roundsPlayed: remote.roundsPlayed + delta(local.roundsPlayed, base.roundsPlayed),
     fastestSolveMs: fastest,
     perGame,
   };
@@ -197,12 +238,14 @@ export function useGameZoneStats() {
       const remote = await pullRemoteStats(uid);
       if (cancelled) return;
       const local = readStats(uid);
-      const merged = remote ? mergeStats(local, remote) : local;
+      const snapshot = readSyncSnapshot(uid);
+      const merged = remote ? mergeStats(local, remote, snapshot) : local;
       writeStats(uid, merged);
       setStats(merged);
       if (!remote || JSON.stringify(remote) !== JSON.stringify(merged)) {
         await pushRemoteStats(uid, merged);
       }
+      writeSyncSnapshot(uid, merged);
     })();
     return () => {
       cancelled = true;
@@ -259,7 +302,7 @@ export function useGameZoneStats() {
         writeStats(uid, next);
         appendUsageLog(uid, { date: todayISO(), game, points: Math.max(0, pointsEarned) });
         if (uid) {
-          void pushRemoteStats(uid, next);
+          void pushRemoteStats(uid, next).then(() => writeSyncSnapshot(uid, next));
           void insertRemoteRound(uid, game, Math.max(0, pointsEarned), correctCount, solveTimeMs);
         }
         return next;
