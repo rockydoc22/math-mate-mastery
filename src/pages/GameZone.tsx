@@ -6,8 +6,9 @@ import { useGameZoneStats, BADGE_TIERS } from "@/hooks/useGameZoneStats";
 import { useDailyCredits, DAILY_CREDIT_MAX } from "@/hooks/useDailyCredits";
 import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
 import { AchievementsPanel } from "@/components/games/AchievementsPanel";
-import { TestModePanel } from "@/components/games/TestModePanel";
 import { SEO } from "@/components/SEO";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
 import { useEffect, useState } from "react";
 import { X, Trophy, Users } from "lucide-react";
@@ -130,8 +131,6 @@ export default function GameZone() {
 
           <AchievementsPanel />
 
-          <TestModePanel />
-
           <Card className="p-4">
             <h2 className="font-semibold mb-3 text-sm">🏆 Badges</h2>
             <div className="flex flex-wrap gap-2">
@@ -146,9 +145,16 @@ export default function GameZone() {
             </div>
           </Card>
 
-          <p className="text-center text-xs text-muted-foreground">
-            Prefer to study? <Link to="/home" className="text-primary hover:underline">Go to Study Dashboard →</Link>
-          </p>
+          {/* Prominent bottom-of-page return to Study Dashboard — mirrors the
+              small header link so students never feel trapped inside Game Zone. */}
+          <Card className="p-4 border-2 border-primary/30 bg-primary/5 text-center">
+            <p className="text-sm text-muted-foreground mb-2">Ready to study?</p>
+            <Link to="/home">
+              <Button size="lg" className="gap-2 w-full sm:w-auto">
+                Go to Study Dashboard <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </Card>
         </main>
       </div>
     </>
