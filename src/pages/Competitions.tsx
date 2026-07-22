@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -32,6 +32,8 @@ const Competitions = () => {
   const navigate = useNavigate();
   const [search, setSearch] = useState('');
   const lowerSearch = search.toLowerCase();
+  const [activeCat, setActiveCat] = useState<string>('');
+  const chipRowRef = useRef<HTMLDivElement>(null);
 
   const filteredCategories = STEM_COMPETITION_CATEGORIES.map(cat => ({
     ...cat,
@@ -45,6 +47,36 @@ const Competitions = () => {
   );
 
   const showDebate = !search || 'debate'.includes(lowerSearch) || DEBATE_FORMATS.some(f => f.name.toLowerCase().includes(lowerSearch));
+
+  // Observe which category is currently in view for active-chip highlighting.
+  useEffect(() => {
+    if (search) return; // chips hidden while searching
+    const ids = [
+      ...STEM_COMPETITION_CATEGORIES.map(c => `cat-${c.id}`),
+      'cat-languages',
+      'cat-debate',
+    ];
+    const els = ids
+      .map(id => document.getElementById(id))
+      .filter((el): el is HTMLElement => !!el);
+    if (!els.length) return;
+    const io = new IntersectionObserver(
+      entries => {
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setActiveCat(visible.target.id);
+      },
+      { rootMargin: '-80px 0px -60% 0px', threshold: 0.01 }
+    );
+    els.forEach(el => io.observe(el));
+    return () => io.disconnect();
+  }, [search]);
+
+  const jumpTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setActiveCat(id);
+  };
 
   return (
     <div className="min-h-screen bg-background pb-20">
@@ -72,33 +104,31 @@ const Competitions = () => {
 
         {/* Quick jump chips */}
         {!search && (
-          <div className="flex flex-wrap gap-2">
+          <div ref={chipRowRef} className="flex flex-wrap gap-2 sticky top-[60px] z-[5] bg-background/95 backdrop-blur py-2 -mx-1 px-1 rounded-md">
             {STEM_COMPETITION_CATEGORIES.map(cat => (
               <Button
                 key={cat.id}
-                variant="outline"
+                variant={activeCat === `cat-${cat.id}` ? 'default' : 'outline'}
                 size="sm"
-                className="h-8 text-xs gap-1"
-                onClick={() => {
-                  document.getElementById(`cat-${cat.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }}
+                className="h-8 text-xs gap-1 transition-all"
+                onClick={() => jumpTo(`cat-${cat.id}`)}
               >
                 <span>{cat.icon}</span> {cat.name}
               </Button>
             ))}
             <Button
-              variant="outline"
+              variant={activeCat === 'cat-languages' ? 'default' : 'outline'}
               size="sm"
               className="h-8 text-xs gap-1"
-              onClick={() => document.getElementById('cat-languages')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              onClick={() => jumpTo('cat-languages')}
             >
               🌐 Languages
             </Button>
             <Button
-              variant="outline"
+              variant={activeCat === 'cat-debate' ? 'default' : 'outline'}
               size="sm"
               className="h-8 text-xs gap-1"
-              onClick={() => document.getElementById('cat-debate')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+              onClick={() => jumpTo('cat-debate')}
             >
               🎤 Debate
             </Button>
@@ -114,10 +144,32 @@ const Competitions = () => {
                 {cat.competitions.length}
               </span>
             </h2>
+            {/* Subject subfilters — jump to a specific competition card in this category */}
+            {cat.competitions.length > 1 && (
+              <div className="flex flex-wrap gap-1.5 mb-3">
+                {cat.competitions.map(comp => (
+                  <button
+                    key={comp.id}
+                    onClick={() => {
+                      document.getElementById(`comp-${comp.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                      const el = document.getElementById(`comp-${comp.id}`);
+                      if (el) {
+                        el.classList.add('ring-2', 'ring-primary');
+                        setTimeout(() => el.classList.remove('ring-2', 'ring-primary'), 1500);
+                      }
+                    }}
+                    className="text-[10px] px-2 py-1 rounded-full bg-muted hover:bg-primary/10 hover:text-primary font-medium transition-colors"
+                  >
+                    {comp.abbr || comp.name}
+                  </button>
+                ))}
+              </div>
+            )}
             <div className="space-y-2">
               {cat.competitions.map(comp => (
                 <Card
                   key={comp.id}
+                  id={`comp-${comp.id}`}
                   className="p-3 hover:border-primary/50 transition-all hover:shadow-md cursor-pointer"
                   onClick={() => navigate(`/competition-hub/${comp.id}`)}
                 >

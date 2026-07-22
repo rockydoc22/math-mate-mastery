@@ -27,6 +27,61 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
     navigate(q ? `/tests?q=${encodeURIComponent(q)}` : "/tests");
   };
 
+  // Category cards with searchable keywords so the search bar filters live.
+  const CATEGORIES = [
+    {
+      id: "hs",
+      route: "/high-school-exams",
+      title: "SAT · PSAT · ACT · AP",
+      subtitle: "College entrance exams & Advanced Placement courses",
+      emojis: ["📐", "🎯", "🎓", "🧪"],
+      keywords: "sat psat act ap advanced placement college board english math reading writing science subject test high school",
+    },
+    {
+      id: "k12",
+      route: "/k12-exams",
+      title: "Homeschool & K-12 Exams",
+      subtitle: "Iowa Assessments, GED, HiSET, TASC & more",
+      emojis: ["🏫"],
+      keywords: "homeschool k12 k-12 iowa ged hiset tasc map growth stanford terranova pssa star elementary middle school",
+    },
+    {
+      id: "comp",
+      route: "/competitions",
+      title: "Competitions",
+      subtitle: "French, Spanish, German, Italian, Latin, Debate, AMC, Physics Bowl…",
+      emojis: ["🏆"],
+      keywords: "competition olympiad amc aime usaco physics bowl chemistry biology economics french spanish german italian latin debate lincoln douglas policy public forum",
+      isNew: true,
+    },
+    {
+      id: "pro",
+      route: "/pro-exams",
+      title: "Professional School Exams",
+      subtitle: "GRE, GMAT, LSAT, MCAT, DAT, OAT & more",
+      emojis: ["🎓"],
+      keywords: "gre gmat lsat mcat dat oat teas nclex bar law medical dental graduate professional",
+    },
+    {
+      id: "iq",
+      route: "/iq-personality",
+      title: "Cognitive Skills & Personality",
+      subtitle: "Big Five, MBTI, DISC, Enneagram, cognitive practice & more",
+      emojis: ["🧠"],
+      keywords: "iq personality cognitive big five ocean mbti disc enneagram strengths emotional intelligence learning style",
+      isNew: true,
+    },
+  ];
+
+  const q = testSearchQuery.trim().toLowerCase();
+  const filtered = q
+    ? CATEGORIES.filter(c =>
+        c.title.toLowerCase().includes(q) ||
+        c.subtitle.toLowerCase().includes(q) ||
+        c.keywords.includes(q)
+      )
+    : CATEGORIES;
+
   useEffect(() => {
     const fetchProfile = async () => {
       if (!user) return;
@@ -119,74 +174,37 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
 
         {/* Category cards — all full-width */}
         <div className="space-y-3">
-
-          {/* High School Standardized Tests */}
-          <Card
-            className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.01] hover:shadow-lg hover:border-primary/50"
-            onClick={() => navigate("/high-school-exams")}
-          >
-            <div className="flex flex-col items-center text-center gap-2">
-              <div className="flex gap-2 text-3xl">
-                <span>📐</span><span>🎯</span><span>🎓</span><span>🧪</span>
+          {filtered.map(c => (
+            <Card
+              key={c.id}
+              className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.01] hover:shadow-lg hover:border-primary/50"
+              onClick={() => navigate(c.route)}
+            >
+              <div className="flex flex-col items-center text-center gap-2">
+                <div className="flex gap-2 text-3xl">
+                  {c.emojis.map((e, i) => <span key={i}>{e}</span>)}
+                </div>
+                <div className="flex items-center gap-1">
+                  <h3 className="font-bold text-lg">{c.title}</h3>
+                  {c.isNew && (
+                    <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">NEW</span>
+                  )}
+                </div>
+                <p className="text-xs text-muted-foreground">{c.subtitle}</p>
               </div>
-              <h3 className="font-bold text-lg">SAT · PSAT · ACT · AP</h3>
-              <p className="text-xs text-muted-foreground">College entrance exams & Advanced Placement courses</p>
-            </div>
-          </Card>
+            </Card>
+          ))}
 
-          {/* Homeschool & K-12 */}
-          <Card
-            className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.01] hover:shadow-lg hover:border-primary/50"
-            onClick={() => navigate("/k12-exams")}
-          >
-            <div className="flex flex-col items-center text-center gap-2">
-              <span className="text-3xl">🏫</span>
-              <h3 className="font-bold text-lg">Homeschool & K-12 Exams</h3>
-              <p className="text-xs text-muted-foreground">Iowa Assessments, GED, HiSET, TASC & more</p>
-            </div>
-          </Card>
-
-          {/* Competitions */}
-          <Card
-            className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.01] hover:shadow-lg hover:border-primary/50"
-            onClick={() => navigate("/competitions")}
-          >
-            <div className="flex flex-col items-center text-center gap-2">
-              <span className="text-3xl">🏆</span>
-              <div className="flex items-center gap-1">
-                <h3 className="font-bold text-lg">Competitions</h3>
-                <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">NEW</span>
-              </div>
-              <p className="text-xs text-muted-foreground">French, Spanish, German, Italian, Latin & Debate</p>
-            </div>
-          </Card>
-
-          {/* Professional Exams */}
-          <Card
-            className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.01] hover:shadow-lg hover:border-primary/50"
-            onClick={() => navigate("/pro-exams")}
-          >
-            <div className="flex flex-col items-center text-center gap-2">
-              <span className="text-3xl">🎓</span>
-              <h3 className="font-bold text-lg">Professional School Exams</h3>
-              <p className="text-xs text-muted-foreground">GRE, GMAT, LSAT, MCAT, DAT, OAT & more</p>
-            </div>
-          </Card>
-
-          {/* Cognitive & Personality */}
-          <Card
-            className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.01] hover:shadow-lg hover:border-primary/50"
-            onClick={() => navigate("/iq-personality")}
-          >
-            <div className="flex flex-col items-center text-center gap-2">
-              <span className="text-3xl">🧠</span>
-              <div className="flex items-center gap-1">
-                <h3 className="font-bold text-lg">Cognitive Skills & Personality</h3>
-                <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">NEW</span>
-              </div>
-              <p className="text-xs text-muted-foreground">Big Five, MBTI, DISC, Enneagram, cognitive practice & more</p>
-            </div>
-          </Card>
+          {filtered.length === 0 && (
+            <Card className="p-6 text-center space-y-3 border-dashed">
+              <p className="text-sm text-muted-foreground">
+                No categories match "{testSearchQuery}".
+              </p>
+              <Button size="sm" onClick={openTestSearch} className="gap-2">
+                <Search className="w-4 h-4" /> Search the full test catalog
+              </Button>
+            </Card>
+          )}
         </div>
 
         <p className="text-xs text-center text-muted-foreground">
