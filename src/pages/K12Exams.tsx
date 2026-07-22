@@ -9,6 +9,7 @@ import { K12_EXAMS } from "@/utils/k12ExamConfig";
 import { loadK12ExamQuestions } from "@/data/k12Questions";
 import { ConsentGate } from "@/components/ConsentGate";
 import { SEO } from "@/components/SEO";
+import { BottomNav } from "@/components/BottomNav";
 
 const K12_DISCLAIMER = `Important Disclaimer
 
@@ -60,7 +61,7 @@ const K12Exams = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+    <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4 pb-24">
       <SEO
         title="Free K-12 State & Standardized Test Prep"
         description="Free practice for MAP Growth, GED, HiSET, TASC, PSSA, Regents, Iowa Assessments, STAR, and more — adaptive and aligned to each exam."
@@ -147,6 +148,7 @@ const K12Exams = () => {
           </div>
         </ConsentGate>
       </div>
+      <BottomNav />
     </div>
   );
 };
