@@ -10,7 +10,7 @@ import { useGameZoneStats } from "@/hooks/useGameZoneStats";
 import { useGameCreditGate } from "@/hooks/useGameCreditGate";
 import { OutOfCreditsCard } from "@/components/games/OutOfCreditsCard";
 import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
-import { rapidFireFacts, SATFact as _SATFact } from "@/data/satFactsRapidFire";
+import { rapidFireFacts } from "@/data/satFactsRapidFire";
 import { buildFunRapidPrompt } from "@/data/funContentPool";
 import { useGameSounds } from "@/hooks/useGameSounds";
 
