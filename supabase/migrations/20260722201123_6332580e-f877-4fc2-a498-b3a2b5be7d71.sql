@@ -1,0 +1,1 @@
+CREATE POLICY "Users delete own rounds" ON public.game_zone_rounds FOR DELETE USING (auth.uid() = user_id);
