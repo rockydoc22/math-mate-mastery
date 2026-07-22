@@ -60,7 +60,7 @@ export default function GameZone() {
         <main className="max-w-2xl mx-auto p-4 space-y-6">
           <div className="text-center pt-2">
             <h1 className="text-3xl sm:text-4xl font-bold">🎮 Game Zone</h1>
-            <p className="text-sm text-muted-foreground mt-1">Learn SAT words the fun way. {DAILY_CREDIT_MAX} free plays every day.</p>
+            <p className="text-sm text-muted-foreground mt-1">Learn SAT words the fun way. Unlimited plays unless a parent sets a daily cap.</p>
             <div className="mt-3 flex justify-center">
               <DailyCreditsBadge />
             </div>
