@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -18,6 +18,35 @@ interface PersonalityItem {
 }
 
 type AssessmentMode = "select" | "big5" | "eq" | "lp" | "results";
+type AssessmentLength = "quick" | "full";
+
+/** Stride-sample N items evenly across trait/domain buckets so a Quick run
+ *  still touches every trait rather than getting stuck on one bucket. */
+function pickQuick<T extends PersonalityItem>(items: T[], count: number, key: "trait" | "domain"): T[] {
+  if (items.length <= count) return items;
+  const buckets: Record<string, T[]> = {};
+  for (const it of items) {
+    const k = ((it as any)[key] as string) || "_";
+    (buckets[k] ||= []).push(it);
+  }
+  const keys = Object.keys(buckets);
+  const per = Math.max(1, Math.floor(count / keys.length));
+  const out: T[] = [];
+  keys.forEach((k) => {
+    const arr = buckets[k];
+    const stride = Math.max(1, Math.floor(arr.length / per));
+    for (let i = 0, taken = 0; i < arr.length && taken < per; i += stride, taken++) {
+      out.push(arr[i]);
+    }
+  });
+  // Top up if we're short after even split.
+  let i = 0;
+  while (out.length < count && i < items.length) {
+    if (!out.includes(items[i])) out.push(items[i]);
+    i++;
+  }
+  return out.slice(0, count);
+}
 
 interface TraitScore {
   trait: string;
@@ -49,7 +78,9 @@ const TRAIT_LABELS: Record<string, string> = {
 
 const PersonalityAssessment = () => {
   const { user } = useAuth();
+  const navigate = useNavigate();
   const [mode, setMode] = useState<AssessmentMode>("select");
+  const [length, setLength] = useState<AssessmentLength>("quick");
   const [items, setItems] = useState<PersonalityItem[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
@@ -61,7 +92,9 @@ const PersonalityAssessment = () => {
     else if (type === "eq") mod = await import("@/data/eq_items_50.json");
     else mod = await import("@/data/learning_preferences_items_32.json");
     const data = (mod.default || mod) as PersonalityItem[];
-    setItems(data);
+    const key: "trait" | "domain" = type === "big5" ? "trait" : "domain";
+    const chosen = length === "quick" ? pickQuick(data, 20, key) : data;
+    setItems(chosen);
     setCurrentIndex(0);
     setAnswers({});
     setMode(type);
@@ -122,7 +155,19 @@ const PersonalityAssessment = () => {
     <div className="min-h-screen bg-background pb-8">
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur border-b border-border px-4 py-3">
         <div className="max-w-md mx-auto flex items-center gap-3">
-          <Link to="/"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => {
+              // Back inside an active assessment returns to the picker;
+              // back on the picker returns to the previous screen (e.g.
+              // the IQ & Personality hub) instead of the landing page.
+              if (mode !== "select") { setMode("select"); setResults([]); return; }
+              if (window.history.length > 1) navigate(-1); else navigate("/");
+            }}
+          >
+            <ArrowLeft className="w-5 h-5" />
+          </Button>
           <h1 className="text-xl font-bold flex items-center gap-2">
             <Heart className="w-5 h-5 text-primary" /> Personality & EQ
           </h1>
@@ -132,6 +177,32 @@ const PersonalityAssessment = () => {
       <div className="max-w-md mx-auto p-4">
         {mode === "select" && (
           <div className="space-y-4">
+            {/* Length picker — 20-item Quick versions still touch every trait
+                (see pickQuick) so results stay useful without a 60-question slog. */}
+            <div className="grid grid-cols-2 gap-1 p-1 rounded-lg bg-muted/60 border border-border">
+              <button
+                type="button"
+                onClick={() => setLength("quick")}
+                className={`py-2 text-xs font-semibold rounded-md transition-colors ${
+                  length === "quick" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Quick · 20 questions
+              </button>
+              <button
+                type="button"
+                onClick={() => setLength("full")}
+                className={`py-2 text-xs font-semibold rounded-md transition-colors ${
+                  length === "full" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Full length
+              </button>
+            </div>
+            <p className="text-[11px] text-muted-foreground text-center">
+              Quick versions sample evenly across traits — great for a first read.
+            </p>
+
             <Card
               className="p-6 cursor-pointer hover:border-primary/50 transition-colors"
               onClick={() => loadItems("big5")}
@@ -141,7 +212,7 @@ const PersonalityAssessment = () => {
                 <div className="flex-1">
                   <h3 className="font-bold">Personality Style</h3>
                   <p className="text-sm text-muted-foreground">
-                    60 questions • Discover your Big Five personality traits
+                    {length === "quick" ? "20 questions" : "60 questions"} • Discover your Big Five personality traits
                   </p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-muted-foreground" />
@@ -157,7 +228,7 @@ const PersonalityAssessment = () => {
                 <div className="flex-1">
                   <h3 className="font-bold">Emotional Intelligence</h3>
                   <p className="text-sm text-muted-foreground">
-                    50 questions • Measure your EQ across 5 domains
+                    {length === "quick" ? "20 questions" : "50 questions"} • Measure your EQ across 5 domains
                   </p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-muted-foreground" />
@@ -173,7 +244,7 @@ const PersonalityAssessment = () => {
                 <div className="flex-1">
                   <h3 className="font-bold">Learning Preferences</h3>
                   <p className="text-sm text-muted-foreground">
-                    32 questions • Discover how you learn best
+                    {length === "quick" ? "20 questions" : "32 questions"} • Discover how you learn best
                   </p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-muted-foreground" />
