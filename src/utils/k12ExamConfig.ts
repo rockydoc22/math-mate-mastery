@@ -50,7 +50,9 @@ export const K12_EXAMS: K12ExamConfig[] = [
   {
     id: 'map-growth', name: 'MAP Growth', shortName: 'MAP', icon: '📊',
     description: 'Measures of Academic Progress',
-    timePerQuestion: 60,
+    // 30s per question keeps MAP Growth quick and matches how students
+    // actually pace short-answer diagnostics.
+    timePerQuestion: 30,
     examKeys: ['MAP Growth'],
     legacyJsonFiles: ['map_growth_question_bank_200_original.json'],
     packExamKey: 'MAP Growth',
