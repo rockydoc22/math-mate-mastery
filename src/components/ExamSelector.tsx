@@ -90,10 +90,7 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
           <div className="mx-auto w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
             <span className="text-xl font-bold text-primary-foreground">AΩ</span>
           </div>
-          <h1 className="text-2xl font-bold">What are you studying for?</h1>
-          <p className="text-sm text-muted-foreground">
-            Choose your exam. You can switch anytime in Settings.
-          </p>
+          <h1 className="text-2xl font-bold">Choose your test</h1>
         </div>
 
         <Card className="p-3 border border-primary/20 bg-card">
@@ -106,7 +103,7 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
                 onKeyDown={(e) => {
                   if (e.key === "Enter") openTestSearch();
                 }}
-                placeholder="Search algebra or prealgebra"
+                placeholder="Name your game"
                 className="pl-9"
                 aria-label="Search all tests and courses"
               />
@@ -115,6 +112,9 @@ export const ExamSelector = ({ onSelect, isModal = false }: ExamSelectorProps) =
               Search
             </Button>
           </div>
+          <p className="text-[11px] text-muted-foreground text-center mt-2">
+            Switch anytime in Settings
+          </p>
         </Card>
 
         {/* Category cards — all full-width */}

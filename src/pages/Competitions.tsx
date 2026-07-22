@@ -70,9 +70,44 @@ const Competitions = () => {
           />
         </div>
 
+        {/* Quick jump chips */}
+        {!search && (
+          <div className="flex flex-wrap gap-2">
+            {STEM_COMPETITION_CATEGORIES.map(cat => (
+              <Button
+                key={cat.id}
+                variant="outline"
+                size="sm"
+                className="h-8 text-xs gap-1"
+                onClick={() => {
+                  document.getElementById(`cat-${cat.id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+              >
+                <span>{cat.icon}</span> {cat.name}
+              </Button>
+            ))}
+            <Button
+              variant="outline"
+              size="sm"
+              className="h-8 text-xs gap-1"
+              onClick={() => document.getElementById('cat-languages')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            >
+              🌐 Languages
+            </Button>
+            <Button
+              variant="outline"
+              size="sm"
+              className="h-8 text-xs gap-1"
+              onClick={() => document.getElementById('cat-debate')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            >
+              🎤 Debate
+            </Button>
+          </div>
+        )}
+
         {/* STEM Competition Categories */}
         {filteredCategories.map(cat => (
-          <div key={cat.id}>
+          <div key={cat.id} id={`cat-${cat.id}`} className="scroll-mt-20">
             <h2 className="text-base font-bold flex items-center gap-2 mb-3">
               <span className="text-lg">{cat.icon}</span> {cat.name}
               <span className="text-[10px] px-2 py-0.5 rounded-full bg-muted text-muted-foreground font-medium">
@@ -111,7 +146,7 @@ const Competitions = () => {
 
         {/* Language Competitions */}
         {filteredLang.length > 0 && (
-          <div>
+          <div id="cat-languages" className="scroll-mt-20">
             <h2 className="text-base font-bold flex items-center gap-2 mb-3">
               <Globe className="w-5 h-5 text-primary" /> Language Competitions
             </h2>
@@ -136,7 +171,7 @@ const Competitions = () => {
 
         {/* Debate */}
         {showDebate && (
-          <div>
+          <div id="cat-debate" className="scroll-mt-20">
             <h2 className="text-base font-bold flex items-center gap-2 mb-3">
               <MessageSquare className="w-5 h-5 text-primary" /> Debate Practice
             </h2>
