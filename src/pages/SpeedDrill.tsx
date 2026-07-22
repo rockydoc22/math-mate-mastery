@@ -131,7 +131,7 @@ const SpeedDrill = () => {
   return (
     <div className="min-h-screen bg-background pb-20">
       <div className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border px-4 py-3 flex items-center gap-3">
-        <Button variant="ghost" size="icon" onClick={() => navigate("/")}>
+        <Button variant="ghost" size="icon" onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))}>
           <ArrowLeft className="w-5 h-5" />
         </Button>
         <div className="flex-1">
@@ -295,7 +295,7 @@ const SpeedDrill = () => {
               <Button className="w-full" onClick={() => setPhase("setup")}>
                 <Zap className="w-4 h-4 mr-2" /> Play Again
               </Button>
-              <Button variant="outline" className="w-full" onClick={() => navigate("/")}>
+              <Button variant="outline" className="w-full" onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))}>
                 Back to Home
               </Button>
             </div>

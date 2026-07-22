@@ -67,7 +67,7 @@ export default function TestCatalog() {
       />
       <div className="max-w-2xl mx-auto space-y-4">
         <div className="flex items-center gap-2 pt-2">
-          <Button variant="ghost" size="sm" onClick={() => navigate("/")} className="gap-1">
+          <Button variant="ghost" size="sm" onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))} className="gap-1">
             <ArrowLeft className="w-4 h-4" /> Back
           </Button>
           <h1 className="text-xl font-bold flex-1">Find a Test</h1>

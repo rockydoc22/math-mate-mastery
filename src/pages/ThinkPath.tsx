@@ -134,7 +134,7 @@ const ThinkPath = () => {
     <div className="min-h-screen bg-background p-4 max-w-2xl mx-auto">
       {/* Header */}
       <div className="flex items-center gap-3 mb-4">
-        <Button variant="ghost" size="icon" onClick={() => navigate("/")}>
+        <Button variant="ghost" size="icon" onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))}>
           <ArrowLeft className="w-5 h-5" />
         </Button>
         <div className="flex-1">
@@ -328,7 +328,7 @@ const ThinkPath = () => {
                     <Sparkles className="w-4 h-4" />
                     Next Scenario
                   </Button>
-                  <Button variant="outline" onClick={() => navigate("/")} className="gap-2">
+                  <Button variant="outline" onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))} className="gap-2">
                     <ArrowLeft className="w-4 h-4" />
                     Home
                   </Button>

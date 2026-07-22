@@ -98,7 +98,7 @@ const DemoMode = () => {
               : "Great practice session!"}
           </p>
           <div className="flex gap-3 justify-center">
-            <Button variant="outline" onClick={() => navigate("/")}>
+            <Button variant="outline" onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))}>
               Home
             </Button>
             <Button onClick={() => {
@@ -122,7 +122,7 @@ const DemoMode = () => {
       <div className="max-w-2xl mx-auto space-y-4">
         {/* Header */}
         <div className="flex items-center justify-between">
-          <Button variant="ghost" onClick={() => navigate("/")}>
+          <Button variant="ghost" onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))}>
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back
           </Button>

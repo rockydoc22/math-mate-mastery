@@ -77,7 +77,7 @@ export default function SurvivalModePage() {
                 <RotateCcw className="h-4 w-4" />
                 Play Again
               </Button>
-              <Button variant="outline" onClick={() => navigate("/")}>
+              <Button variant="outline" onClick={() => (window.history.length > 1 ? navigate(-1) : navigate("/"))}>
                 Home
               </Button>
             </div>
