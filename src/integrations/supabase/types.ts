@@ -1154,6 +1154,7 @@ export type Database = {
       }
       profiles: {
         Row: {
+          age_band: string | null
           avatar_emoji: string | null
           avatar_url: string | null
           created_at: string
@@ -1166,6 +1167,7 @@ export type Database = {
           num_kids: number
           pinned_subjects: string[]
           primary_goal: string | null
+          self_ratings: Json
           show_on_leaderboards: boolean
           summary_email: string | null
           theme_color: string | null
@@ -1174,6 +1176,7 @@ export type Database = {
           weekly_summary_enabled: boolean
         }
         Insert: {
+          age_band?: string | null
           avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
@@ -1186,6 +1189,7 @@ export type Database = {
           num_kids?: number
           pinned_subjects?: string[]
           primary_goal?: string | null
+          self_ratings?: Json
           show_on_leaderboards?: boolean
           summary_email?: string | null
           theme_color?: string | null
@@ -1194,6 +1198,7 @@ export type Database = {
           weekly_summary_enabled?: boolean
         }
         Update: {
+          age_band?: string | null
           avatar_emoji?: string | null
           avatar_url?: string | null
           created_at?: string
@@ -1206,6 +1211,7 @@ export type Database = {
           num_kids?: number
           pinned_subjects?: string[]
           primary_goal?: string | null
+          self_ratings?: Json
           show_on_leaderboards?: boolean
           summary_email?: string | null
           theme_color?: string | null
