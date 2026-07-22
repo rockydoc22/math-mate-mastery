@@ -6,6 +6,7 @@ import { useGameZoneStats, BADGE_TIERS } from "@/hooks/useGameZoneStats";
 import { useDailyCredits, DAILY_CREDIT_MAX } from "@/hooks/useDailyCredits";
 import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
 import { AchievementsPanel } from "@/components/games/AchievementsPanel";
+import { GameHistoryCard } from "@/components/games/GameHistoryCard";
 import { SEO } from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -131,6 +132,11 @@ export default function GameZone() {
 
           <AchievementsPanel />
 
+          {/* Persistent per-user game history — kept until the student
+              clears it. Rendered here so "Study" no longer looks empty
+              after a session of games. */}
+          <GameHistoryCard />
+
           <Card className="p-4">
             <h2 className="font-semibold mb-3 text-sm">🏆 Badges</h2>
             <div className="flex flex-wrap gap-2">
@@ -147,14 +153,11 @@ export default function GameZone() {
 
           {/* Prominent bottom-of-page return to Study Dashboard — mirrors the
               small header link so students never feel trapped inside Game Zone. */}
-          <Card className="p-4 border-2 border-primary/30 bg-primary/5 text-center">
-            <p className="text-sm text-muted-foreground mb-2">Ready to study?</p>
-            <Link to="/home">
-              <Button size="lg" className="gap-2 w-full sm:w-auto">
-                Go to Study Dashboard <ArrowRight className="w-4 h-4" />
-              </Button>
-            </Link>
-          </Card>
+          <Link to="/home" className="block">
+            <Button size="lg" className="gap-2 w-full">
+              Study Dashboard <ArrowRight className="w-4 h-4" />
+            </Button>
+          </Link>
         </main>
       </div>
     </>
