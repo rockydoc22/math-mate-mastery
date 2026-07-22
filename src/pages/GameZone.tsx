@@ -11,20 +11,32 @@ import { SEO } from "@/components/SEO";
 import { useAuth } from "@/hooks/useAuth";
 import { useEffect, useState } from "react";
 import { X, Trophy, Users } from "lucide-react";
+import { useLearnerContext } from "@/hooks/useLearnerContext";
+import { resolveStudyFocus } from "@/data/gameVocabPools";
 
 const games = [
-  { id: "hangman", to: "/games/hangman", emoji: "🪢", name: "Word Hangman", hook: "Guess the SAT word letter by letter", color: "bg-blue-500/10" },
-  { id: "poker", to: "/games/poker", emoji: "🃏", name: "Vocab Poker", hook: "Play the right card. Fold the bluffs.", color: "bg-emerald-500/10" },
-  { id: "emoji", to: "/games/emoji", emoji: "🧩", name: "Emoji Decode", hook: "Crack the emoji-clue vocab word", color: "bg-purple-500/10" },
-  { id: "rapid", to: "/games/rapid", emoji: "⚡", name: "Rapid Fire", hook: "60 seconds. True or false. Go.", color: "bg-orange-500/10" },
-  { id: "anagram", to: "/games/anagram", emoji: "🔤", name: "Anagram Sprint", hook: "Unscramble words against the clock", color: "bg-pink-500/10" },
+  { id: "hangman", to: "/games/hangman", emoji: "🪢", name: "Word Hangman", hook: "Guess the vocab word letter by letter", color: "bg-blue-500/10", audience: "all" as const },
+  { id: "poker", to: "/games/poker", emoji: "🃏", name: "Vocab Poker", hook: "Wager, read the definition, play or fold.", color: "bg-emerald-500/10", audience: "all" as const },
+  // Emoji Decode leans on pop-culture emoji-rebus puzzles — great for younger
+  // learners, less relevant for teens prepping for SAT/MCAT/etc. Surface it
+  // only for the "kid" focus (or when no exam has been chosen yet).
+  { id: "emoji", to: "/games/emoji", emoji: "🧩", name: "Emoji Decode", hook: "Crack the emoji-clue word", color: "bg-purple-500/10", audience: "kid" as const },
+  { id: "rapid", to: "/games/rapid", emoji: "⚡", name: "Rapid Fire", hook: "30 seconds. True or false. Go.", color: "bg-orange-500/10", audience: "all" as const },
+  { id: "anagram", to: "/games/anagram", emoji: "🔤", name: "Anagram Sprint", hook: "Unscramble words against the clock", color: "bg-pink-500/10", audience: "all" as const },
 ] as const;
 
 export default function GameZone() {
   const { stats, earnedBadges } = useGameZoneStats();
   const { credits, isEmpty, resetsInLabel } = useDailyCredits();
   const { user } = useAuth();
+  const learner = useLearnerContext();
   const [showSignupBanner, setShowSignupBanner] = useState(false);
+
+  const focus = resolveStudyFocus({
+    examType: learner.examType,
+    dateOfBirth: learner.dateOfBirth,
+  });
+  const visibleGames = games.filter((g) => g.audience === "all" || g.audience === focus);
 
   useEffect(() => {
     if (user) return;
@@ -84,7 +96,7 @@ export default function GameZone() {
           )}
 
           <div className="grid gap-4 sm:grid-cols-2">
-            {games.map((g) => {
+            {visibleGames.map((g) => {
               const gameStats = stats.perGame[g.id] ?? { high: 0, played: 0 };
               const disabled = isEmpty;
               const content = (
