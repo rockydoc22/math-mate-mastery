@@ -36,7 +36,7 @@ function K12AIAssistantCard({ onOpen }: { onOpen: () => void }) {
     </Card>
   );
 }
-import { ArrowLeft, Clock, CheckCircle2, XCircle, RotateCcw, Filter, Flag, Brain } from "lucide-react";
+import { ArrowLeft, Clock, CheckCircle2, XCircle, RotateCcw, Filter, Flag, Brain, Target } from "lucide-react";
 import { getK12Exam } from "@/utils/k12ExamConfig";
 import { loadK12ExamQuestions, getK12QuestionsBySubject } from "@/data/k12Questions";
 import { Question } from "@/data/questions";
@@ -45,9 +45,20 @@ import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { BottomNav } from "@/components/BottomNav";
+import { DesmosCalculator } from "@/components/DesmosCalculator";
 import { FlagQuestionModal } from "@/components/FlagQuestionModal";
 
 const QUIZ_SIZE = 10;
+// Diagnostic pulls a wider sample so we can spot strengths/weaknesses across
+// every subject in one sitting without turning it into a full mock exam.
+const DIAGNOSTIC_SIZE = 20;
+
+/** A subject is "math-y" when the calculator should surface automatically. */
+function isMathSubject(domain: string | undefined | null): boolean {
+  if (!domain) return false;
+  const k = domain.toLowerCase();
+  return k.includes('math') || k.includes('algebra') || k.includes('geometry') || k.includes('quant');
+}
 
 const K12ExamQuiz = () => {
   const { examId } = useParams<{ examId: string }>();
@@ -86,12 +97,42 @@ const K12ExamQuiz = () => {
     return Object.entries(counts).sort((a, b) => b[1] - a[1]);
   }, [allQuestions]);
 
-  const startQuiz = useCallback((subject?: string, difficulty?: string) => {
+  const startQuiz = useCallback((subject?: string, difficulty?: string, opts?: { diagnostic?: boolean }) => {
+    const diagnostic = !!opts?.diagnostic;
     let pool = subject ? getK12QuestionsBySubject(allQuestions, subject) : allQuestions;
     if (difficulty) {
       pool = pool.filter(q => q.difficulty.toLowerCase() === difficulty.toLowerCase());
     }
-    const selected = [...pool].sort(() => Math.random() - 0.5).slice(0, QUIZ_SIZE);
+    // Extra safety: strip any near-duplicate prompts that slipped through the
+    // loader-level dedupe (protects against the "DNA question twice" bug).
+    const seenText = new Set<string>();
+    pool = pool.filter(q => {
+      const k = q.question.trim().toLowerCase().replace(/\s+/g, ' ');
+      if (seenText.has(k)) return false;
+      seenText.add(k);
+      return true;
+    });
+    const size = diagnostic ? DIAGNOSTIC_SIZE : QUIZ_SIZE;
+    let selected: Question[];
+    if (diagnostic && !subject) {
+      // General diagnostic — round-robin across subjects so we cover every
+      // domain roughly evenly instead of getting a Math-heavy random pull.
+      const byDomain: Record<string, Question[]> = {};
+      for (const q of pool) (byDomain[q.domain] ||= []).push(q);
+      Object.values(byDomain).forEach(arr => arr.sort(() => Math.random() - 0.5));
+      const domains = Object.keys(byDomain);
+      const picked: Question[] = [];
+      let i = 0;
+      while (picked.length < size && domains.some(d => byDomain[d].length)) {
+        const d = domains[i % domains.length];
+        const q = byDomain[d].shift();
+        if (q) picked.push(q);
+        i++;
+      }
+      selected = picked;
+    } else {
+      selected = [...pool].sort(() => Math.random() - 0.5).slice(0, size);
+    }
     if (selected.length === 0) {
       toast({ title: "No questions available", description: "No questions match that filter." });
       return;
@@ -209,6 +250,7 @@ const K12ExamQuiz = () => {
   // Active quiz
   if (quizActive && quizQuestions.length > 0) {
     const current = quizQuestions[currentIndex];
+    const showCalculator = isMathSubject(current.domain);
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4 pb-24">
         <div className="max-w-lg mx-auto space-y-4 animate-in fade-in">
@@ -283,6 +325,9 @@ const K12ExamQuiz = () => {
           questionData={{ ...current }}
           onFlagged={() => nextQuestion()}
         />
+        {/* Calculator FAB — auto-mounts on math prompts. Students asked for
+            this on MAP Growth math items that need multi-step arithmetic. */}
+        {showCalculator && <DesmosCalculator />}
         <BottomNav />
       </div>
     );
@@ -307,6 +352,32 @@ const K12ExamQuiz = () => {
         {/* AI Assistant card — hidden entirely when the user has turned it
             off globally in Settings. */}
         <K12AIAssistantCard onOpen={() => navigate(`/k12-tutor/${examId}`)} />
+
+        {/* Diagnostic — a single 20-question pull that spans every subject so
+            students get a fast strengths/weaknesses read before drilling into
+            any one topic. Per-subject diagnostics live below each subject. */}
+        <div className="space-y-2">
+          <h3 className="text-sm font-semibold flex items-center gap-2">
+            <Target className="w-4 h-4" /> Diagnostic Assessment
+          </h3>
+          <Card
+            className="p-4 cursor-pointer border-2 transition-all hover:border-primary/50 hover:shadow-md bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/20 dark:to-teal-950/20"
+            onClick={() => startQuiz(undefined, undefined, { diagnostic: true })}
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">🎯</span>
+              <div className="flex-1">
+                <h4 className="font-semibold text-sm">General diagnostic</h4>
+                <p className="text-[11px] text-muted-foreground">
+                  {DIAGNOSTIC_SIZE} questions across every subject · timed · shows where you're strong and weak
+                </p>
+              </div>
+              <span className="text-[10px] px-2 py-0.5 rounded-full bg-primary/10 text-primary font-medium">
+                {DIAGNOSTIC_SIZE}q
+              </span>
+            </div>
+          </Card>
+        </div>
 
         {/* Difficulty filter */}
         <div className="space-y-2">
@@ -334,15 +405,35 @@ const K12ExamQuiz = () => {
           <h3 className="text-sm font-semibold flex items-center gap-2">
             <Filter className="w-4 h-4" /> By Subject
           </h3>
+          <p className="text-[11px] text-muted-foreground -mt-1">
+            Each subject pick runs {QUIZ_SIZE} timed questions · {exam.timePerQuestion}s each.
+            Tap "Diagnose" for a wider {DIAGNOSTIC_SIZE}-question read on that subject.
+          </p>
           {subjects.map(([subject, count]) => (
             <Card
               key={subject}
-              className="p-4 cursor-pointer border-2 hover:border-primary/50 transition-all"
-              onClick={() => startQuiz(subject)}
+              className="p-4 border-2 hover:border-primary/50 transition-all"
             >
-              <div className="flex justify-between items-center">
-                <h4 className="font-medium text-sm">{subject}</h4>
-                <span className="text-xs text-muted-foreground">{count} questions</span>
+              <div className="flex justify-between items-center gap-2">
+                <div className="min-w-0 flex-1">
+                  <h4 className="font-medium text-sm">{subject}</h4>
+                  <p className="text-[10px] text-muted-foreground">
+                    {count} questions available · {QUIZ_SIZE} per quiz · {exam.timePerQuestion}s each
+                  </p>
+                </div>
+                <div className="flex flex-col gap-1 shrink-0">
+                  <Button size="sm" className="h-7 px-2 text-[11px]" onClick={() => startQuiz(subject)}>
+                    Practice ({QUIZ_SIZE})
+                  </Button>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="h-7 px-2 text-[11px]"
+                    onClick={() => startQuiz(subject, undefined, { diagnostic: true })}
+                  >
+                    Diagnose ({DIAGNOSTIC_SIZE})
+                  </Button>
+                </div>
               </div>
             </Card>
           ))}
