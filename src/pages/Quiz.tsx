@@ -67,6 +67,8 @@ const Quiz = () => {
   const count = Number(searchParams.get("count")) || 10;
   const difficulty = (searchParams.get("difficulty") || "all") as DifficultyRange;
   const topicId = searchParams.get("topic");
+  const skillFilter = searchParams.get("skill");
+  const isMasteryDose = searchParams.get("mastery") === "1";
   const timerEnabled = searchParams.get("timer") !== "false";
   const { playCorrect, playWrong } = useSoundEffects();
   const { user } = useAuth();
