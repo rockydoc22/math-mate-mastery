@@ -236,6 +236,25 @@ export default function Hangman() {
     if (dyingTimer.current) window.clearTimeout(dyingTimer.current);
   }, []);
 
+  // Physical keyboard support: A–Z keys guess letters. Ignored while typing
+  // in an input, during defeat animation, on repeat keys, or when finished.
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.repeat || e.ctrlKey || e.metaKey || e.altKey) return;
+      const target = e.target as HTMLElement | null;
+      const tag = target?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA" || target?.isContentEditable) return;
+      if (finished || dying || blocked) return;
+      const key = e.key.toUpperCase();
+      if (key.length === 1 && key >= "A" && key <= "Z") {
+        e.preventDefault();
+        guess(key);
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [guess, finished, dying, blocked]);
+
   const restart = () => {
     if (!spendForRestart()) return;
     if (dyingTimer.current) { window.clearTimeout(dyingTimer.current); dyingTimer.current = null; }
