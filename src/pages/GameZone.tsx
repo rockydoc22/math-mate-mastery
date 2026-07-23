@@ -24,7 +24,7 @@ const games = [
   // only for the "kid" focus (or when no exam has been chosen yet).
   { id: "emoji", to: "/games/emoji", emoji: "🧩", name: "Emoji Decode", hook: "Crack the emoji-clue word", color: "bg-purple-500/10", audience: "kid" as const },
   { id: "rapid", to: "/games/rapid", emoji: "⚡", name: "Rapid Fire", hook: "30 seconds. True or false. Go.", color: "bg-orange-500/10", audience: "all" as const },
-  { id: "anagram", to: "/games/anagram", emoji: "🔤", name: "Anagram Sprint", hook: "Unscramble words against the clock", color: "bg-pink-500/10", audience: "all" as const },
+  { id: "anagram", to: "/games/anagram", emoji: "😇", name: "Angel or Demon", hook: "Unscramble words — free the angel, dodge the demon", color: "bg-pink-500/10", audience: "all" as const },
 ] as const;
 
 export default function GameZone() {
