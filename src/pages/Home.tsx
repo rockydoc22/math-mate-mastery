@@ -41,6 +41,8 @@ import { SubjectPinManager } from "@/components/SubjectPinManager";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Pin } from "lucide-react";
 import { RecommendedPracticeWidget } from "@/components/RecommendedPracticeWidget";
+import { MasteryContinueCard } from "@/components/MasteryContinueCard";
+import { WeakAreasPanel } from "@/components/WeakAreasPanel";
 import { NextBestActionWidget } from "@/components/NextBestActionWidget";
 import { QuickDuelEntry } from "@/components/QuickDuelEntry";
 import { StreakFreezeWidget } from "@/components/StreakFreezeWidget";
@@ -653,6 +655,12 @@ const Home = () => {
 
         {/* Quick Duel Entry */}
         {!focusMode && <QuickDuelEntry />}
+
+        {/* Path to Mastery — daily doses for active goals */}
+        {!focusMode && user && <MasteryContinueCard />}
+
+        {/* Unified Weak Areas surface — every test's weaknesses in one place */}
+        {!focusMode && user && <WeakAreasPanel limit={4} />}
 
         {/* Recommended Practice Widget */}
         {!focusMode && <RecommendedPracticeWidget />}
