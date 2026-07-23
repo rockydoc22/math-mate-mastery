@@ -93,7 +93,7 @@ const PersonalityAssessment = () => {
     else mod = await import("@/data/learning_preferences_items_32.json");
     const data = (mod.default || mod) as PersonalityItem[];
     const key: "trait" | "domain" = type === "big5" ? "trait" : "domain";
-    const chosen = length === "quick" ? pickQuick(data, 20, key) : data;
+    const chosen = length === "quick" ? pickQuick(data, 12, key) : data;
     setItems(chosen);
     setCurrentIndex(0);
     setAnswers({});
@@ -187,7 +187,7 @@ const PersonalityAssessment = () => {
                   length === "quick" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
-                Quick · 20 questions
+                Quick · 12 questions
               </button>
               <button
                 type="button"
@@ -212,7 +212,7 @@ const PersonalityAssessment = () => {
                 <div className="flex-1">
                   <h3 className="font-bold">Personality Style</h3>
                   <p className="text-sm text-muted-foreground">
-                    {length === "quick" ? "20 questions" : "60 questions"} • Discover your Big Five personality traits
+                    {length === "quick" ? "12 questions" : "60 questions"} • Discover your Big Five personality traits
                   </p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-muted-foreground" />
@@ -228,7 +228,7 @@ const PersonalityAssessment = () => {
                 <div className="flex-1">
                   <h3 className="font-bold">Emotional Intelligence</h3>
                   <p className="text-sm text-muted-foreground">
-                    {length === "quick" ? "20 questions" : "50 questions"} • Measure your EQ across 5 domains
+                    {length === "quick" ? "12 questions" : "50 questions"} • Measure your EQ across 5 domains
                   </p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-muted-foreground" />
@@ -244,7 +244,7 @@ const PersonalityAssessment = () => {
                 <div className="flex-1">
                   <h3 className="font-bold">Learning Preferences</h3>
                   <p className="text-sm text-muted-foreground">
-                    {length === "quick" ? "20 questions" : "32 questions"} • Discover how you learn best
+                    {length === "quick" ? "12 questions" : "32 questions"} • Discover how you learn best
                   </p>
                 </div>
                 <ChevronRight className="w-5 h-5 text-muted-foreground" />
