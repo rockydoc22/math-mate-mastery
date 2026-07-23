@@ -164,6 +164,20 @@ const ProgressReport = () => {
 
         {/* Overall stats */}
         <Card className="p-5 mb-4">
+          {/* Score Tracker entry — moved from Pro Exams hub */}
+          <Link
+            to="/pro-exam-scores"
+            className="mb-4 flex items-center justify-between gap-3 rounded-lg border border-dashed border-primary/40 bg-primary/5 px-3 py-2 hover:bg-primary/10 transition-colors print:hidden"
+          >
+            <div className="flex items-center gap-2">
+              <FileText className="w-4 h-4 text-primary" />
+              <div className="leading-tight">
+                <p className="text-xs font-semibold">Score Tracker</p>
+                <p className="text-[10px] text-muted-foreground">Full-length test scores across every exam</p>
+              </div>
+            </div>
+            <span className="text-[11px] text-primary font-medium">Open →</span>
+          </Link>
           <h3 className="font-semibold mb-4 flex items-center gap-2">
             <BarChart3 className="w-5 h-5 text-primary" /> Overall Performance
           </h3>
