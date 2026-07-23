@@ -257,13 +257,18 @@ export default function RapidFireSwipe() {
                 <p className="text-sm font-semibold">Ones you missed</p>
                 <ul className="space-y-2 text-xs">
                   {reviews.map((r, i) => (
-                    <li key={i} className="rounded-md border p-2 space-y-0.5">
-                      <div className="text-foreground">{r.text}</div>
-                      <div className="text-muted-foreground">
-                        You said <strong>{r.userSaid ? "TRUE" : "FALSE"}</strong> · correct answer was{" "}
-                        <strong className="text-emerald-600 dark:text-emerald-400">{r.isTrue ? "TRUE" : "FALSE"}</strong>
+                    <li key={i} className="rounded-md border p-2 space-y-1">
+                      <div className="text-foreground font-medium">{r.text}</div>
+                      <div className="rounded border-l-2 border-destructive bg-destructive/5 pl-2 py-1">
+                        <span className="text-[10px] uppercase font-bold text-destructive tracking-wider">Your answer · {r.userSaid ? "TRUE" : "FALSE"}</span>
+                        <div className="text-muted-foreground italic">
+                          {r.userSaid === r.isTrue ? r.answer : `Not quite — the statement as shown is ${r.isTrue ? "TRUE" : "FALSE"}.`}
+                        </div>
                       </div>
-                      <div className="text-muted-foreground">Right answer: <em>{r.answer}</em></div>
+                      <div className="rounded border-l-2 border-emerald-500 bg-emerald-500/5 pl-2 py-1">
+                        <span className="text-[10px] uppercase font-bold text-emerald-600 dark:text-emerald-400 tracking-wider">Correct · {r.isTrue ? "TRUE" : "FALSE"}</span>
+                        <div className="text-foreground">{r.answer}</div>
+                      </div>
                     </li>
                   ))}
                 </ul>
