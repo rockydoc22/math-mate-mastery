@@ -55,7 +55,10 @@ const DOMAIN_LABELS: Record<string, string> = {
 };
 
 const DIFFICULTY_WEIGHT: Record<string, number> = { easy: 1, medium: 1.5, hard: 2 };
-const TIME_LIMIT = 900; // 15 minutes
+const TIME_LIMIT_FULL = 900; // 15 minutes
+const TIME_LIMIT_QUICK = 480; // 8 minutes
+const QUESTION_COUNT_FULL = 25;
+const QUESTION_COUNT_QUICK = 12;
 
 const computeIQEstimate = (weightedScore: number, maxWeighted: number, timeSec: number): number => {
   const ratio = weightedScore / maxWeighted;
@@ -81,18 +84,20 @@ const IQTest = () => {
   const { user } = useAuth();
   const [mode, setMode] = useState<Mode>("select");
   const [ageRange, setAgeRange] = useState("");
+  const [length, setLength] = useState<"quick" | "full">("quick");
   const [items, setItems] = useState<IQItem[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [startTime, setStartTime] = useState(0);
   const [totalTime, setTotalTime] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(TIME_LIMIT);
+  const [timeLeft, setTimeLeft] = useState(TIME_LIMIT_QUICK);
   const [iqScore, setIqScore] = useState(0);
   const [domainScores, setDomainScores] = useState<DomainScore[]>([]);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [history, setHistory] = useState<any[]>([]);
 
-  const QUESTION_COUNT = 25;
+  const QUESTION_COUNT = length === "quick" ? QUESTION_COUNT_QUICK : QUESTION_COUNT_FULL;
+  const TIME_LIMIT = length === "quick" ? TIME_LIMIT_QUICK : TIME_LIMIT_FULL;
 
   // Timer
   useEffect(() => {
@@ -257,11 +262,34 @@ const IQTest = () => {
               <h3 className="font-bold text-sm text-foreground mb-2">📋 About This Test</h3>
               <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-4">
                 <li>Measures <strong>pattern recognition, spatial reasoning, verbal & numerical ability, and logic</strong></li>
-                <li><strong>25 questions</strong> — results shown only at the end</li>
-                <li><strong>15-minute time limit</strong> — completing faster earns a slight score bonus</li>
+                <li><strong>{QUESTION_COUNT} questions</strong> — results shown only at the end</li>
+                <li><strong>{Math.round(TIME_LIMIT / 60)}-minute time limit</strong> — completing faster earns a slight score bonus</li>
                 <li>Non-clinical educational estimate (not a replacement for professional testing)</li>
               </ul>
             </Card>
+
+            {/* Abbreviated vs Full toggle — Quick still touches every domain
+                (round-robin sampling below) so results stay meaningful. */}
+            <div className="grid grid-cols-2 gap-1 p-1 rounded-lg bg-muted/60 border border-border">
+              <button
+                type="button"
+                onClick={() => setLength("quick")}
+                className={`py-2 text-xs font-semibold rounded-md transition-colors ${
+                  length === "quick" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Abbreviated · {QUESTION_COUNT_QUICK} questions
+              </button>
+              <button
+                type="button"
+                onClick={() => setLength("full")}
+                className={`py-2 text-xs font-semibold rounded-md transition-colors ${
+                  length === "full" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                Full · {QUESTION_COUNT_FULL} questions
+              </button>
+            </div>
 
             <h2 className="font-bold text-lg text-foreground">Select Your Age Group</h2>
 
@@ -272,7 +300,7 @@ const IQTest = () => {
                   <div className="flex-1">
                     <h3 className="font-bold text-foreground">{age.label}</h3>
                     <p className="text-sm text-muted-foreground">{age.desc}</p>
-                    <p className="text-xs text-muted-foreground mt-1">25 questions • 15 min limit • IQ estimate</p>
+                    <p className="text-xs text-muted-foreground mt-1">{QUESTION_COUNT} questions • {Math.round(TIME_LIMIT / 60)} min limit • IQ estimate</p>
                   </div>
                   <ChevronRight className="w-5 h-5 text-muted-foreground" />
                 </div>

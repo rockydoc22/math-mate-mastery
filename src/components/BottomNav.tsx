@@ -1,6 +1,20 @@
 import { Home, Play, Gamepad2, RotateCcw, User } from "lucide-react";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import { useEffect, useMemo, useSyncExternalStore } from "react";
 import { cn } from "@/lib/utils";
+
+// Singleton guard: a global <BottomNav /> is mounted in AppRoutes, but many
+// legacy pages still render their own. Only the first mounted instance
+// actually paints so we never get a duplicated fixed bar.
+let owners: symbol[] = [];
+const listeners = new Set<() => void>();
+const notify = () => listeners.forEach((l) => l());
+const subscribe = (cb: () => void) => {
+  listeners.add(cb);
+  return () => listeners.delete(cb);
+};
+const getOwner = () => (owners[0] as symbol | undefined) ?? null;
+const getServerOwner = () => null;
 
 const navItems = [
   { to: "/", icon: Home, label: "Home" },
@@ -13,6 +27,21 @@ const navItems = [
 export const BottomNav = () => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  const id = useMemo(() => Symbol("BottomNav"), []);
+  useEffect(() => {
+    owners.push(id);
+    notify();
+    return () => {
+      owners = owners.filter((o) => o !== id);
+      notify();
+    };
+  }, [id]);
+  const currentOwner = useSyncExternalStore(subscribe, getOwner, getServerOwner);
+  if (currentOwner && currentOwner !== id) return null;
+
+  // Hide on auth pages where the tab bar isn't useful.
+  if (/^\/auth(\/|$)/.test(location.pathname)) return null;
 
   const goHome = (e: React.MouseEvent) => {
     e.preventDefault();
