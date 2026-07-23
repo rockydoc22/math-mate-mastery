@@ -111,6 +111,41 @@ const HighSchoolExams = () => {
               </div>
             </div>
           </Card>
+
+          {/* High School Equivalency */}
+          <div className="pt-2">
+            <p className="text-[11px] font-semibold uppercase tracking-wide text-muted-foreground px-1 mb-2">
+              High School Equivalency
+            </p>
+            <div className="space-y-3">
+              <Card
+                className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.01] hover:shadow-lg hover:border-primary/50"
+                onClick={() => navigate("/pro-exam-study/ged")}
+              >
+                <div className="flex items-center gap-4">
+                  <span className="text-4xl">📜</span>
+                  <div>
+                    <h3 className="font-bold text-lg">GED</h3>
+                    <p className="text-xs text-muted-foreground">General Educational Development</p>
+                    <p className="text-[10px] text-muted-foreground mt-1">Score: 100–200 · Math, RLA, Science, Social Studies</p>
+                  </div>
+                </div>
+              </Card>
+              <Card
+                className="p-5 cursor-pointer border-2 transition-all hover:scale-[1.01] hover:shadow-lg hover:border-primary/50"
+                onClick={() => navigate("/pro-exam-study/hiset")}
+              >
+                <div className="flex items-center gap-4">
+                  <span className="text-4xl">📋</span>
+                  <div>
+                    <h3 className="font-bold text-lg">HiSET</h3>
+                    <p className="text-xs text-muted-foreground">High School Equivalency Test</p>
+                    <p className="text-[10px] text-muted-foreground mt-1">Score: 1–20 · Math, Reading, Writing, Science, Social Studies</p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </div>
