@@ -41,7 +41,7 @@ const THEMES_INFO: Record<string, { icon: string; domain: string; desc: string }
   Woo: { icon: "🌟", domain: "Influencing", desc: "You win others over with your charm, enjoy meeting new people, and break the ice." },
 };
 
-const QUESTIONS: SQuestion[] = [
+const ALL_QUESTIONS: SQuestion[] = [
   {id:1,text:"I have a strong internal drive to accomplish things every day.",theme:"Achiever"},
   {id:2,text:"I prefer to act immediately rather than deliberate for too long.",theme:"Activator"},
   {id:3,text:"I always want to understand why something happened before moving on.",theme:"Analytical"},
