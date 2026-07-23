@@ -101,6 +101,9 @@ export default function VocabPoker() {
   const [finished, setFinished] = useState<null | { win: boolean; points: number }>(null);
   const [wager, setWager] = useState<number>(25);
   const [doubledDown, setDoubledDown] = useState(false);
+  // Toggle to re-surface the definition in a larger, prominent block after a
+  // wrong answer — so players can re-read it before advancing.
+  const [explanationExpanded, setExplanationExpanded] = useState(false);
 
   // Draw initial hand + first prompt once.
   useEffect(() => {
@@ -147,6 +150,7 @@ export default function VocabPoker() {
     setPromptCard(p.promptCard);
     setIsMatch(p.isMatch);
     setFeedback(null);
+    setExplanationExpanded(false);
     setDoubledDown(false);
     // Reset to default wager so wagers are always an intentional choice.
     setWager(25);
@@ -214,15 +218,9 @@ export default function VocabPoker() {
           dealFreshRound(deck, newHand);
         }, 1200);
       } else {
-        // Auto-advance safety net at 12s in case the player walks away.
-        window.setTimeout(() => {
-          setFeedback((current) => {
-            if (!current) return current;
-            const newHand = removeCardId ? hand.filter((c) => c.id !== removeCardId) : hand;
-            dealFreshRound(deck, newHand);
-            return null;
-          });
-        }, 12000);
+        // Wrong answers stay on screen until the player taps "Next round" —
+        // gives them full control over pacing so they can re-read the
+        // explanation as long as they need.
       }
     },
     [chips, hand, deck, promptCard, playCorrect, playWrong, endGame, wager]
@@ -395,9 +393,28 @@ export default function VocabPoker() {
                     </p>
                   )}
                   {(feedback.kind === "wrongPlay" || feedback.kind === "wrongFold") && (
-                    <Button size="sm" className="mt-2" onClick={advanceFromFeedback}>
-                      Next round →
-                    </Button>
+                    <>
+                      {explanationExpanded && promptCard && (
+                        <div className="mt-2 mx-auto max-w-sm rounded-lg border border-border bg-background/80 p-3 text-left space-y-1 animate-fade-in">
+                          <p className="text-[10px] uppercase tracking-widest text-muted-foreground">Explanation</p>
+                          <p className="text-sm">
+                            <strong className="capitalize">{promptCard.word}</strong> — {promptCard.definition}
+                          </p>
+                        </div>
+                      )}
+                      <div className="flex gap-2 justify-center mt-2 flex-wrap">
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={() => setExplanationExpanded((v) => !v)}
+                        >
+                          {explanationExpanded ? "Hide explanation" : "Show explanation again"}
+                        </Button>
+                        <Button size="sm" onClick={advanceFromFeedback}>
+                          Next round →
+                        </Button>
+                      </div>
+                    </>
                   )}
                 </div>
               ) : (
