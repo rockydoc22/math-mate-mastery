@@ -353,6 +353,29 @@ const Quiz = () => {
       setScore(score + 1);
       playCorrect();
       markQuestionCorrect(currentQuestion.id, "quiz");
+      // Mastery goal progress — increment correct_count for matching active goal.
+      if (user && skillFilter) {
+        const domainKey = currentQuestion.type === "english" ? "english"
+          : currentQuestion.type === "science" ? "science" : "math";
+        try {
+          const { data: goal } = await supabase
+            .from("mastery_goals")
+            .select("id, correct_count, target")
+            .eq("user_id", user.id)
+            .eq("skill", skillFilter)
+            .eq("status", "active")
+            .maybeSingle();
+          if (goal) {
+            const next = (goal.correct_count || 0) + 1;
+            const patch: any = { correct_count: next, last_dose_at: new Date().toISOString() };
+            if (next >= goal.target) {
+              patch.status = "completed";
+              patch.completed_at = new Date().toISOString();
+            }
+            await supabase.from("mastery_goals").update(patch).eq("id", goal.id);
+          }
+        } catch { /* non-fatal */ }
+      }
     } else {
       playWrong();
     }
