@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -8,10 +8,11 @@ import { Progress } from "@/components/ui/progress";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
+import { pickQuick } from "@/utils/pickQuick";
 
 interface MBTIQuestion { id: number; text: string; dimA: string; dimB: string; }
 
-const QUESTIONS: MBTIQuestion[] = [
+const ALL_QUESTIONS: MBTIQuestion[] = [
   // E vs I (1-18)
   {id:1,text:"At a party, I interact with many people including strangers.",dimA:"E",dimB:"I"},
   {id:2,text:"I prefer one-on-one conversations to group activities.",dimA:"I",dimB:"E"},
@@ -121,6 +122,12 @@ const PersonalityMBTI = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [completed, setCompleted] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [length, setLength] = useState<"quick" | "full">("quick");
+  // Quick = 20 balanced across the 8 preference poles; full = every item.
+  const QUESTIONS = useMemo(
+    () => (length === "quick" ? pickQuick(ALL_QUESTIONS, 20, "dimA") : ALL_QUESTIONS),
+    [length]
+  );
   const questionsPerPage = 5;
   const totalPages = Math.ceil(QUESTIONS.length / questionsPerPage);
   const pageQuestions = QUESTIONS.slice(currentPage * questionsPerPage, (currentPage + 1) * questionsPerPage);
@@ -262,6 +269,24 @@ const PersonalityMBTI = () => {
         <Card className="p-4 border-amber-500/30 bg-amber-500/5">
           <p className="text-xs text-muted-foreground"><strong>⚠️ Non-Clinical:</strong> Educational self-assessment only. Not a licensed MBTI® instrument.</p>
         </Card>
+        {/* Abbreviated vs Full toggle — Quick stride-samples across every
+            preference pole so results remain meaningful at 20 items. */}
+        <div className="grid grid-cols-2 gap-1 p-1 rounded-lg bg-muted/60 border border-border">
+          <button
+            type="button"
+            onClick={() => { setLength("quick"); setAnswers({}); setCurrentPage(0); }}
+            className={`py-2 text-xs font-semibold rounded-md transition-colors ${length === "quick" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+          >
+            Quick · 20 questions
+          </button>
+          <button
+            type="button"
+            onClick={() => { setLength("full"); setAnswers({}); setCurrentPage(0); }}
+            className={`py-2 text-xs font-semibold rounded-md transition-colors ${length === "full" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+          >
+            Full · {ALL_QUESTIONS.length} questions
+          </button>
+        </div>
         {pageQuestions.map(q => (
           <Card key={q.id} className="p-4 space-y-3">
             <p className="text-sm font-medium">{q.id}. {q.text}</p>

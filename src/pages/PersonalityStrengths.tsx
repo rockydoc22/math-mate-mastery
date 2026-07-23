@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import { Progress } from "@/components/ui/progress";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
+import { pickQuick } from "@/utils/pickQuick";
 
 interface SQuestion { id: number; text: string; theme: string; }
 
@@ -40,7 +41,7 @@ const THEMES_INFO: Record<string, { icon: string; domain: string; desc: string }
   Woo: { icon: "🌟", domain: "Influencing", desc: "You win others over with your charm, enjoy meeting new people, and break the ice." },
 };
 
-const QUESTIONS: SQuestion[] = [
+const ALL_QUESTIONS: SQuestion[] = [
   {id:1,text:"I have a strong internal drive to accomplish things every day.",theme:"Achiever"},
   {id:2,text:"I prefer to act immediately rather than deliberate for too long.",theme:"Activator"},
   {id:3,text:"I always want to understand why something happened before moving on.",theme:"Analytical"},
@@ -91,6 +92,12 @@ const PersonalityStrengths = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [completed, setCompleted] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [length, setLength] = useState<"quick" | "full">("quick");
+  // Quick keeps at least one item per theme so all themes remain rankable.
+  const QUESTIONS = useMemo(
+    () => (length === "quick" ? pickQuick(ALL_QUESTIONS, 20, "theme") : ALL_QUESTIONS),
+    [length]
+  );
   const qpp = 8;
   const totalPages = Math.ceil(QUESTIONS.length / qpp);
   const pageQs = QUESTIONS.slice(currentPage * qpp, (currentPage + 1) * qpp);
@@ -184,6 +191,16 @@ const PersonalityStrengths = () => {
       </div>
       <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
         <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational assessment inspired by strengths-based frameworks. Not a diagnostic tool. If you have mental health concerns, please seek professional help.</p></Card>
+        <div className="grid grid-cols-2 gap-1 p-1 rounded-lg bg-muted/60 border border-border">
+          <button type="button" onClick={() => { setLength("quick"); setAnswers({}); setCurrentPage(0); }}
+            className={`py-2 text-xs font-semibold rounded-md transition-colors ${length === "quick" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
+            Quick · 20 questions
+          </button>
+          <button type="button" onClick={() => { setLength("full"); setAnswers({}); setCurrentPage(0); }}
+            className={`py-2 text-xs font-semibold rounded-md transition-colors ${length === "full" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
+            Full · {ALL_QUESTIONS.length} questions
+          </button>
+        </div>
         {pageQs.map(q => (
           <Card key={q.id} className="p-4 space-y-3">
             <p className="text-sm font-medium">{q.id}. {q.text}</p>

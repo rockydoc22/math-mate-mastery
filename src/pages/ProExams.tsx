@@ -1,10 +1,9 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, ChevronRight, Swords } from "lucide-react";
 import { PRO_EXAMS, PRO_EXAM_CATEGORIES, type ProExamConfig } from "@/utils/proExamConfig";
-import { BottomNav } from "@/components/BottomNav";
 import { ConsentGate } from "@/components/ConsentGate";
 import { SEO } from "@/components/SEO";
 
@@ -37,9 +36,36 @@ const IP_CHECKBOX = "I have read and understand this notice. I acknowledge that 
 // MCAT and LSAT are now FRQ-only (no multiple choice to avoid IP issues)
 const FRQ_ONLY_EXAMS = ['mcat', 'lsat'];
 
+// The Pro Exams page focuses on graduate / professional / career exams.
+// K-12 assessments live in /k12-exams and GED/HiSET live in /high-school-exams,
+// so we drop those categories/exams here to avoid duplication.
+const HIDDEN_CATEGORIES = new Set(['k12']);
+const HIDDEN_EXAM_IDS = new Set(['ged', 'hiset']);
+
+// Consolidated top-level groups. Each group pulls from one or more of the
+// raw exam categories so students see a cleaner "pick your track" layout.
+type GroupKey = 'healthcare' | 'graduate' | 'career' | 'military' | 'international' | 'faith';
+const GROUPS: Record<GroupKey, { label: string; icon: string; blurb: string; categories: string[]; extras?: string[] }> = {
+  healthcare:    { label: 'Healthcare',        icon: '⚕️', blurb: 'MCAT, DAT, OAT, NCLEX, TEAS + Anatomy Atlas', categories: ['professional', 'nursing'], extras: ['anatomy-atlas'] },
+  graduate:      { label: 'Graduate & Law',    icon: '🎓', blurb: 'GRE, GMAT, LSAT',                              categories: ['graduate'] },
+  career:        { label: 'Career & Placement', icon: '💼', blurb: 'ACCUPLACER and college placement',            categories: ['career'] },
+  military:      { label: 'Military & Trade',  icon: '🎖️', blurb: 'ASVAB and vocational batteries',              categories: ['military'] },
+  international: { label: 'International & Language', icon: '🌍', blurb: 'TOEFL and IB Diploma',                   categories: ['international'] },
+  faith:         { label: 'Faith-Based',       icon: '✝️', blurb: 'Classic Learning Test',                        categories: ['faith-based'] },
+};
+const GROUP_ORDER: GroupKey[] = ['healthcare', 'graduate', 'career', 'military', 'international', 'faith'];
+
 const ProExams = () => {
   const navigate = useNavigate();
-  const categories = Object.entries(PRO_EXAM_CATEGORIES);
+  const [activeGroup, setActiveGroup] = useState<GroupKey | null>(null);
+
+  const visibleExams = useMemo(
+    () => PRO_EXAMS.filter(e => !HIDDEN_CATEGORIES.has(e.category) && !HIDDEN_EXAM_IDS.has(e.id)),
+    []
+  );
+
+  const examsInGroup = (g: GroupKey): ProExamConfig[] =>
+    visibleExams.filter(e => GROUPS[g].categories.includes(e.category));
 
   return (
     <div className="min-h-screen bg-background pb-24">
@@ -71,244 +97,141 @@ const ProExams = () => {
           disclaimerText={IP_DISCLAIMER}
           checkboxLabel={IP_CHECKBOX}
         >
-          {categories.map(([catKey, catMeta]) => {
-            const exams = PRO_EXAMS.filter(e => e.category === catKey && !FRQ_ONLY_EXAMS.includes(e.id));
-            if (exams.length === 0) return null;
-            return (
-              <div key={catKey} className="mb-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xl">{catMeta.icon}</span>
-                  <h2 className="text-lg font-bold">{catMeta.label}</h2>
-                </div>
-                <div className="grid gap-3">
-                  {exams.map(exam => (
-                    <Card
-                      key={exam.id}
-                      className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40 group"
-                      onClick={() => navigate(`/pro-exam/${exam.id}`)}
-                    >
-                      <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl shrink-0">
-                          {exam.icon}
-                        </div>
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2">
-                            <h3 className="font-bold text-foreground">{exam.shortName}</h3>
-                            <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-accent text-accent-foreground font-medium">
-                              {exam.scoreRange.min}–{exam.scoreRange.max}
-                            </span>
-                            {exam.fresh && (
-                              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-semibold border border-emerald-500/30">
-                                ✨ Fresh 300+
-                              </span>
-                            )}
-                          </div>
-                          <p className="text-xs text-muted-foreground truncate">{exam.description}</p>
-                          <div className="flex gap-1 mt-1 flex-wrap">
-                            {exam.sections.slice(0, 3).map(s => (
-                              <span key={s} className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground">
-                                {s.length > 20 ? s.slice(0, 18) + '…' : s}
-                              </span>
-                            ))}
-                            {exam.sections.length > 3 && (
-                              <span className="text-[10px] px-1.5 py-0.5 rounded bg-muted text-muted-foreground">
-                                +{exam.sections.length - 3} more
-                              </span>
-                            )}
-                          </div>
-                        </div>
-                        <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
-                      </div>
-                    </Card>
-                  ))}
-                </div>
-              </div>
-            );
-          })}
-
-          {/* MCAT/LSAT — FRQ-Only Section */}
-          <div className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl">✍️</span>
-              <h2 className="text-lg font-bold">MCAT & LSAT — Free Response Only</h2>
-            </div>
-            <p className="text-xs text-muted-foreground mb-3">
-              Original passage-based reasoning questions with AI grading. No multiple choice — all free response to avoid any IP concerns.
-            </p>
-            <div className="grid gap-3">
-              {FRQ_ONLY_EXAMS.map(id => {
-                const exam = PRO_EXAMS.find(e => e.id === id);
-                if (!exam) return null;
-                return (
-                  <Card
-                    key={id}
-                    className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40 group border-2 border-primary/20"
-                    onClick={() => navigate(`/pro-exam-frq/${id}`)}
-                  >
-                    <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl shrink-0">
-                        {exam.icon}
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2">
-                          <h3 className="font-bold text-foreground">{exam.shortName}</h3>
-                          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">FRQ Only</span>
-                        </div>
-                        <p className="text-xs text-muted-foreground">{exam.description}</p>
-                        <p className="text-[10px] text-primary mt-1">Original passages • AI-graded • No IP risk</p>
-                      </div>
-                      <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
-                    </div>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Anatomy Atlas - MCAT Specific */}
-          <div className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl">🫀</span>
-              <h2 className="text-lg font-bold">Anatomy Atlas</h2>
-            </div>
-            <p className="text-xs text-muted-foreground mb-3">
-              Interactive body identification — like the game Operation! Identify muscles, bones, and structures.
-            </p>
-            <Card
-              className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40 group border-2 border-primary/20"
-              onClick={() => navigate('/anatomy-atlas')}
-            >
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl shrink-0">
-                  🦴
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-center gap-2">
-                    <h3 className="font-bold text-foreground">Musculoskeletal Atlas</h3>
-                    <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">Interactive</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground">Identify muscles & bones on interactive SVG diagrams</p>
-                  <p className="text-[10px] text-primary mt-1">Desktop: free-text • Mobile: tap labels • Fuzzy spelling</p>
-                </div>
-                <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
-              </div>
-            </Card>
-          </div>
-
-          {/* GRE/GMAT FRQ Practice Section */}
-          <div className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl">📝</span>
-              <h2 className="text-lg font-bold">Analytical Writing Practice</h2>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              {['gre', 'gmat'].map(id => {
-                const exam = PRO_EXAMS.find(e => e.id === id);
-                if (!exam) return null;
-                return (
-                  <Card
-                    key={id}
-                    className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40 group"
-                    onClick={() => navigate(`/pro-exam-frq/${id}`)}
-                  >
-                    <div className="flex flex-col items-center text-center gap-2">
-                      <span className="text-2xl">{exam.icon}</span>
-                      <h3 className="font-bold text-sm text-foreground">{exam.shortName} FRQ</h3>
-                      <span className="text-[10px] text-muted-foreground">Written analysis</span>
-                    </div>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Study Guides - exclude gated exams */}
-          <div className="mb-6">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl">📖</span>
-              <h2 className="text-lg font-bold">Study Guides</h2>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              {['gre', 'gmat'].map(id => {
-                const exam = PRO_EXAMS.find(e => e.id === id);
-                if (!exam) return null;
-                return (
-                  <Card
-                    key={id}
-                    className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40 group"
-                    onClick={() => navigate(`/pro-exam-study/${id}`)}
-                  >
-                    <div className="flex flex-col items-center text-center gap-2">
-                      <span className="text-2xl">{exam.icon}</span>
-                      <h3 className="font-bold text-sm text-foreground">{exam.shortName} Guide</h3>
-                      <span className="text-[10px] text-muted-foreground">Strategies & formulas</span>
-                    </div>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-
-          {/* Tools Row */}
+          {/* Category picker — tap a track to reveal its exams. */}
           <div className="grid grid-cols-2 gap-3">
-            <Card
-              className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40"
-              onClick={() => navigate('/logic-games')}
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl shrink-0">🧩</div>
-                <div>
-                  <h3 className="font-bold text-sm text-foreground">Logic Games</h3>
-                  <p className="text-[10px] text-muted-foreground">Analytical puzzles</p>
-                </div>
-              </div>
-            </Card>
-            <Card
-              className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40"
-              onClick={() => navigate('/pro-exam-scores')}
-            >
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl shrink-0">📊</div>
-                <div>
-                  <h3 className="font-bold text-sm text-foreground">Score Tracker</h3>
-                  <p className="text-[10px] text-muted-foreground">Track progress</p>
-                </div>
-              </div>
-            </Card>
+            {GROUP_ORDER.map(g => {
+              const count = examsInGroup(g).length + (GROUPS[g].extras?.length ?? 0);
+              if (count === 0) return null;
+              const active = activeGroup === g;
+              return (
+                <Card
+                  key={g}
+                  onClick={() => setActiveGroup(active ? null : g)}
+                  className={`p-4 cursor-pointer transition-all hover:shadow-md ${active ? 'border-primary ring-2 ring-primary/30' : 'hover:border-primary/40'}`}
+                >
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl shrink-0">{GROUPS[g].icon}</span>
+                    <div className="min-w-0">
+                      <h2 className="font-bold text-sm text-foreground">{GROUPS[g].label}</h2>
+                      <p className="text-[11px] text-muted-foreground leading-snug">{GROUPS[g].blurb}</p>
+                      <p className="text-[10px] text-primary mt-1">{count} exam{count === 1 ? '' : 's'}</p>
+                    </div>
+                  </div>
+                </Card>
+              );
+            })}
           </div>
 
-          {/* ProExam Boss Battles */}
-          <div className="mt-6">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="text-xl">💀</span>
-              <h2 className="text-lg font-bold">Daily ProExam Boss</h2>
-            </div>
-            <p className="text-xs text-muted-foreground mb-3">
-              One hard question per exam, per day. Beat the boss to prove mastery.
-            </p>
-            <div className="grid grid-cols-3 gap-2">
-              {['gre', 'gmat', 'lsat', 'mcat', 'nclex', 'teas'].map(id => {
-                const exam = PRO_EXAMS.find(e => e.id === id);
-                if (!exam) return null;
-                return (
-                  <Card
-                    key={id}
-                    className="p-3 cursor-pointer hover:shadow-md transition-all hover:border-destructive/40 group"
-                    onClick={() => navigate(`/boss-battle?exam=${id}`)}
+          {activeGroup && (
+            <div className="space-y-3">
+              <div className="flex items-center gap-2 pt-2">
+                <span className="text-xl">{GROUPS[activeGroup].icon}</span>
+                <h2 className="text-lg font-bold">{GROUPS[activeGroup].label}</h2>
+              </div>
+              {examsInGroup(activeGroup).map(exam => (
+                <Card
+                  key={exam.id}
+                  className="p-4 hover:shadow-md transition-all hover:border-primary/40 group"
+                >
+                  <div
+                    className="flex items-center gap-4 cursor-pointer"
+                    onClick={() =>
+                      navigate(FRQ_ONLY_EXAMS.includes(exam.id) ? `/pro-exam-frq/${exam.id}` : `/pro-exam/${exam.id}`)
+                    }
                   >
-                    <div className="flex flex-col items-center text-center gap-1">
-                      <span className="text-xl">{exam.icon}</span>
-                      <h3 className="font-bold text-xs text-foreground">{exam.shortName}</h3>
-                      <span className="text-[10px] text-destructive">⚔️ Boss</span>
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl shrink-0">
+                      {exam.icon}
                     </div>
-                  </Card>
-                );
-              })}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h3 className="font-bold text-foreground">{exam.shortName}</h3>
+                        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-accent text-accent-foreground font-medium">
+                          {exam.scoreRange.min}–{exam.scoreRange.max}
+                        </span>
+                        {FRQ_ONLY_EXAMS.includes(exam.id) && (
+                          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-primary/10 text-primary font-medium">FRQ Only</span>
+                        )}
+                        {exam.fresh && (
+                          <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-semibold border border-emerald-500/30">
+                            ✨ Fresh
+                          </span>
+                        )}
+                      </div>
+                      <p className="text-xs text-muted-foreground truncate">{exam.description}</p>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
+                  </div>
+
+                  {/* Per-exam extras: score tracker, study guide, daily boss.
+                      Boss lives on the exam card as "Daily <EXAM> Boss" per the
+                      user's request rather than a separate global section. */}
+                  <div className="mt-3 pt-3 border-t border-border flex flex-wrap gap-2">
+                    <Button
+                      size="sm" variant="outline"
+                      onClick={(e) => { e.stopPropagation(); navigate(`/boss-battle?exam=${exam.id}`); }}
+                      className="text-[11px] h-7"
+                    >
+                      <Swords className="w-3 h-3 mr-1" /> Daily {exam.shortName} Boss
+                    </Button>
+                    {['gre', 'gmat'].includes(exam.id) && (
+                      <>
+                        <Button
+                          size="sm" variant="ghost"
+                          onClick={(e) => { e.stopPropagation(); navigate(`/pro-exam-frq/${exam.id}`); }}
+                          className="text-[11px] h-7"
+                        >
+                          ✍️ Analytical Writing
+                        </Button>
+                        <Button
+                          size="sm" variant="ghost"
+                          onClick={(e) => { e.stopPropagation(); navigate(`/pro-exam-study/${exam.id}`); }}
+                          className="text-[11px] h-7"
+                        >
+                          📖 Study Guide
+                        </Button>
+                      </>
+                    )}
+                    {exam.id === 'lsat' && (
+                      <Button
+                        size="sm" variant="ghost"
+                        onClick={(e) => { e.stopPropagation(); navigate('/logic-games'); }}
+                        className="text-[11px] h-7"
+                      >
+                        🧩 Logic Games
+                      </Button>
+                    )}
+                  </div>
+                </Card>
+              ))}
+
+              {activeGroup === 'healthcare' && (
+                <Card
+                  className="p-4 cursor-pointer hover:shadow-md transition-all hover:border-primary/40 group border-2 border-primary/20"
+                  onClick={() => navigate('/anatomy-atlas')}
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-2xl shrink-0">🦴</div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-bold text-foreground">Anatomy Atlas</h3>
+                      <p className="text-xs text-muted-foreground">Interactive muscle & bone identification for MCAT/NCLEX prep.</p>
+                    </div>
+                    <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
+                  </div>
+                </Card>
+              )}
+
+              {/* Global score tracker lives at the bottom of any active group
+                  so it isn't a competing top-level tile. */}
+              <button
+                onClick={() => navigate('/pro-exam-scores')}
+                className="w-full text-xs text-primary hover:underline pt-1"
+              >
+                📊 Open Score Tracker for all exams →
+              </button>
             </div>
-          </div>
+          )}
         </ConsentGate>
       </div>
-      <BottomNav />
     </div>
   );
 };

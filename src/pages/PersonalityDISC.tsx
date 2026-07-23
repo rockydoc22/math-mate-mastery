@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -11,10 +11,11 @@ import { toast } from "@/hooks/use-toast";
 import { DISCSliderQuestion } from "@/components/disc/DISCSliderQuestion";
 import { DISCResultsView } from "@/components/disc/DISCResultsView";
 import { DISCHistory } from "@/components/disc/DISCHistory";
+import { pickQuick } from "@/utils/pickQuick";
 
 interface DISCQuestion { id: number; text: string; dim: "D" | "I" | "S" | "C"; }
 
-const QUESTIONS: DISCQuestion[] = [
+const ALL_QUESTIONS: DISCQuestion[] = [
   {id:1,text:"I enjoy taking charge and leading others.",dim:"D"},
   {id:2,text:"I make decisions quickly and decisively.",dim:"D"},
   {id:3,text:"I am direct and straightforward in communication.",dim:"D"},
@@ -53,6 +54,12 @@ const PersonalityDISC = () => {
   const [completed, setCompleted] = useState(false);
   const [saving, setSaving] = useState(false);
   const [resultData, setResultData] = useState<{ pcts: Record<string, number>; primary: string } | null>(null);
+  const [length, setLength] = useState<"quick" | "full">("quick");
+  // Quick keeps five items per DISC dimension so scores remain balanced.
+  const QUESTIONS = useMemo(
+    () => (length === "quick" ? pickQuick(ALL_QUESTIONS, 20, "dim") : ALL_QUESTIONS),
+    [length]
+  );
 
   const qpp = 7;
   const totalPages = Math.ceil(QUESTIONS.length / qpp);
@@ -155,6 +162,16 @@ const PersonalityDISC = () => {
             <strong>⚠️</strong> Educational self-assessment only. Slide the bar to where you feel best represents you — anywhere along the line, not just the endpoints.
           </p>
         </Card>
+        <div className="grid grid-cols-2 gap-1 p-1 rounded-lg bg-muted/60 border border-border">
+          <button type="button" onClick={() => { setLength("quick"); setAnswers({}); setCurrentPage(0); }}
+            className={`py-2 text-xs font-semibold rounded-md transition-colors ${length === "quick" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
+            Quick · 20 questions
+          </button>
+          <button type="button" onClick={() => { setLength("full"); setAnswers({}); setCurrentPage(0); }}
+            className={`py-2 text-xs font-semibold rounded-md transition-colors ${length === "full" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
+            Full · {ALL_QUESTIONS.length} questions
+          </button>
+        </div>
 
         {pageQs.map(q => (
           <DISCSliderQuestion
