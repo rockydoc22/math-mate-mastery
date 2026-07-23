@@ -18,6 +18,7 @@ import { useQuizTimer } from "@/hooks/useQuizTimer";
 import { DifficultyRange, filterByDifficulty, getDifficultyColor } from "@/utils/difficultyRating";
 import { allTopics } from "@/data/topicCategories";
 import { RatingChangePopup } from "@/components/RatingChangePopup";
+import { supabase } from "@/integrations/supabase/client";
 
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { DesmosCalculator } from "@/components/DesmosCalculator";
@@ -67,6 +68,8 @@ const Quiz = () => {
   const count = Number(searchParams.get("count")) || 10;
   const difficulty = (searchParams.get("difficulty") || "all") as DifficultyRange;
   const topicId = searchParams.get("topic");
+  const skillFilter = searchParams.get("skill");
+  const isMasteryDose = searchParams.get("mastery") === "1";
   const timerEnabled = searchParams.get("timer") !== "false";
   const { playCorrect, playWrong } = useSoundEffects();
   const { user } = useAuth();
@@ -147,6 +150,17 @@ const Quiz = () => {
             return topic.keywords.some(keyword => searchText.includes(keyword.toLowerCase()));
           });
         }
+      }
+
+      // Skill filter — powers "Practice this weak area" and mastery doses.
+      if (skillFilter) {
+        const needle = skillFilter.toLowerCase();
+        const skillMatched = prioritizedPool.filter(q => {
+          const s = ((q as any).skill || "").toLowerCase();
+          const d = ((q as any).domain || "").toLowerCase();
+          return s === needle || s.includes(needle) || d.includes(needle);
+        });
+        if (skillMatched.length > 0) topicFiltered = skillMatched;
       }
 
       const filtered = subject === "physics" || subject === "precalc" || subject === "calculus"
@@ -340,6 +354,29 @@ const Quiz = () => {
       setScore(score + 1);
       playCorrect();
       markQuestionCorrect(currentQuestion.id, "quiz");
+      // Mastery goal progress — increment correct_count for matching active goal.
+      if (user && skillFilter) {
+        const domainKey = currentQuestion.type === "english" ? "english"
+          : currentQuestion.type === "science" ? "science" : "math";
+        try {
+          const { data: goal } = await supabase
+            .from("mastery_goals")
+            .select("id, correct_count, target")
+            .eq("user_id", user.id)
+            .eq("skill", skillFilter)
+            .eq("status", "active")
+            .maybeSingle();
+          if (goal) {
+            const next = (goal.correct_count || 0) + 1;
+            const patch: any = { correct_count: next, last_dose_at: new Date().toISOString() };
+            if (next >= goal.target) {
+              patch.status = "completed";
+              patch.completed_at = new Date().toISOString();
+            }
+            await supabase.from("mastery_goals").update(patch).eq("id", goal.id);
+          }
+        } catch { /* non-fatal */ }
+      }
     } else {
       playWrong();
     }
