@@ -151,6 +151,17 @@ const Quiz = () => {
         }
       }
 
+      // Skill filter — powers "Practice this weak area" and mastery doses.
+      if (skillFilter) {
+        const needle = skillFilter.toLowerCase();
+        const skillMatched = prioritizedPool.filter(q => {
+          const s = ((q as any).skill || "").toLowerCase();
+          const d = ((q as any).domain || "").toLowerCase();
+          return s === needle || s.includes(needle) || d.includes(needle);
+        });
+        if (skillMatched.length > 0) topicFiltered = skillMatched;
+      }
+
       const filtered = subject === "physics" || subject === "precalc" || subject === "calculus"
         ? topicFiltered
         : filterByDifficulty(topicFiltered, difficulty);
