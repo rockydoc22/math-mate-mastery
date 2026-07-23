@@ -12,6 +12,7 @@ import { useExamType } from "@/hooks/useExamType";
 import { EXAM_CONFIGS, type ExamType } from "@/utils/examConfig";
 import { useAIAssistant } from "@/hooks/useAIAssistant";
 import { Switch } from "@/components/ui/switch";
+import { SEO } from "@/components/SEO";
 
 const validatePassword = (password: string): { valid: boolean; error?: string } => {
   if (password.length < 8) {
@@ -135,6 +136,12 @@ const Settings = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+      <SEO
+        title="Account Settings — Test, Age, Preferences"
+        description="Choose your test, set your age band, tune subject strengths, and toggle the AI Assistant. Everything is switchable anytime."
+        path="/settings"
+        noindex
+      />
       <div className="max-w-md mx-auto space-y-6">
         <h1 className="sr-only">Account Settings</h1>
         <button
