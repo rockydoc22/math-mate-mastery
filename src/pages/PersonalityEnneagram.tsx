@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -8,10 +8,11 @@ import { Progress } from "@/components/ui/progress";
 import { supabase } from "@/integrations/supabase/client";
 import { useAuth } from "@/hooks/useAuth";
 import { toast } from "@/hooks/use-toast";
+import { pickQuick } from "@/utils/pickQuick";
 
 interface EQuestion { id: number; text: string; type: number; }
 
-const QUESTIONS: EQuestion[] = [
+const ALL_QUESTIONS: EQuestion[] = [
   {id:1,text:"I strive to do everything correctly and ethically.",type:1},
   {id:2,text:"I have a strong inner critic that pushes me to improve.",type:1},
   {id:3,text:"I get frustrated when others don't follow the rules.",type:1},
@@ -76,6 +77,12 @@ const PersonalityEnneagram = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [completed, setCompleted] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [length, setLength] = useState<"quick" | "full">("quick");
+  // Quick = 18 items (2 per Enneagram type) so every type stays represented.
+  const QUESTIONS = useMemo(
+    () => (length === "quick" ? pickQuick(ALL_QUESTIONS, 18, "type") : ALL_QUESTIONS),
+    [length]
+  );
   const qpp = 9;
   const totalPages = Math.ceil(QUESTIONS.length / qpp);
   const pageQs = QUESTIONS.slice(currentPage * qpp, (currentPage + 1) * qpp);
@@ -148,6 +155,16 @@ const PersonalityEnneagram = () => {
       </div>
       <div className="max-w-2xl mx-auto px-4 py-6 space-y-6">
         <Card className="p-4 border-amber-500/30 bg-amber-500/5"><p className="text-xs text-muted-foreground"><strong>⚠️</strong> Educational self-assessment only. Not a diagnostic tool. If concerned about your mental health, please seek professional help.</p></Card>
+        <div className="grid grid-cols-2 gap-1 p-1 rounded-lg bg-muted/60 border border-border">
+          <button type="button" onClick={() => { setLength("quick"); setAnswers({}); setCurrentPage(0); }}
+            className={`py-2 text-xs font-semibold rounded-md transition-colors ${length === "quick" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
+            Quick · 18 questions
+          </button>
+          <button type="button" onClick={() => { setLength("full"); setAnswers({}); setCurrentPage(0); }}
+            className={`py-2 text-xs font-semibold rounded-md transition-colors ${length === "full" ? "bg-background shadow text-foreground" : "text-muted-foreground hover:text-foreground"}`}>
+            Full · {ALL_QUESTIONS.length} questions
+          </button>
+        </div>
         {pageQs.map(q => (
           <Card key={q.id} className="p-4 space-y-3">
             <p className="text-sm font-medium">{q.id}. {q.text}</p>
