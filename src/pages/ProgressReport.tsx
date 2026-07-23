@@ -11,6 +11,8 @@ import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { BottomNav } from "@/components/BottomNav";
 import { motion } from "framer-motion";
+import { WeakAreasPanel } from "@/components/WeakAreasPanel";
+import { MasteryContinueCard } from "@/components/MasteryContinueCard";
 
 interface ReportData {
   totalQuestions: number;
@@ -161,6 +163,10 @@ const ProgressReport = () => {
           <h1 className="text-2xl font-bold">📊 Student Progress Report</h1>
           <p className="text-sm text-muted-foreground">Generated {new Date().toLocaleDateString()}</p>
         </div>
+
+        {/* Path to Mastery + Weak Areas — same components used on Home */}
+        <MasteryContinueCard />
+        <WeakAreasPanel limit={6} />
 
         {/* Overall stats */}
         <Card className="p-5 mb-4">
