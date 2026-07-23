@@ -424,12 +424,12 @@ export default function VocabPoker() {
 
             {/* Wager controls — visible only while the player is deciding. */}
             {!feedback && promptCard && (
-              <Card className="p-3 space-y-2">
+              <Card className="p-3 space-y-2 border-2 border-amber-400/70 bg-gradient-to-br from-amber-100/70 via-yellow-50 to-amber-100/70 dark:from-amber-950/40 dark:via-yellow-950/30 dark:to-amber-950/40 shadow-sm">
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] uppercase tracking-wider text-muted-foreground">
-                    Your wager
+                  <span className="text-[11px] uppercase tracking-wider font-bold text-amber-700 dark:text-amber-300 flex items-center gap-1">
+                    🪙 Your wager
                   </span>
-                  <span className="text-sm font-bold tabular-nums">
+                  <span className="text-sm font-bold tabular-nums text-amber-900 dark:text-amber-100">
                     {wager} chip{wager === 1 ? "" : "s"}
                     {doubledDown && <span className="ml-1 text-amber-500">· 2×</span>}
                   </span>
