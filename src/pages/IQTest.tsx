@@ -55,7 +55,10 @@ const DOMAIN_LABELS: Record<string, string> = {
 };
 
 const DIFFICULTY_WEIGHT: Record<string, number> = { easy: 1, medium: 1.5, hard: 2 };
-const TIME_LIMIT = 900; // 15 minutes
+const TIME_LIMIT_FULL = 900; // 15 minutes
+const TIME_LIMIT_QUICK = 480; // 8 minutes
+const QUESTION_COUNT_FULL = 25;
+const QUESTION_COUNT_QUICK = 12;
 
 const computeIQEstimate = (weightedScore: number, maxWeighted: number, timeSec: number): number => {
   const ratio = weightedScore / maxWeighted;
@@ -81,18 +84,20 @@ const IQTest = () => {
   const { user } = useAuth();
   const [mode, setMode] = useState<Mode>("select");
   const [ageRange, setAgeRange] = useState("");
+  const [length, setLength] = useState<"quick" | "full">("quick");
   const [items, setItems] = useState<IQItem[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [startTime, setStartTime] = useState(0);
   const [totalTime, setTotalTime] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(TIME_LIMIT);
+  const [timeLeft, setTimeLeft] = useState(TIME_LIMIT_QUICK);
   const [iqScore, setIqScore] = useState(0);
   const [domainScores, setDomainScores] = useState<DomainScore[]>([]);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [history, setHistory] = useState<any[]>([]);
 
-  const QUESTION_COUNT = 25;
+  const QUESTION_COUNT = length === "quick" ? QUESTION_COUNT_QUICK : QUESTION_COUNT_FULL;
+  const TIME_LIMIT = length === "quick" ? TIME_LIMIT_QUICK : TIME_LIMIT_FULL;
 
   // Timer
   useEffect(() => {
