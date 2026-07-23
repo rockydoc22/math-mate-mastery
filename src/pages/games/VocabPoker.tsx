@@ -214,7 +214,7 @@ export default function VocabPoker() {
           dealFreshRound(deck, newHand);
         }, 1200);
       } else {
-        // Auto-advance safety net at 7s in case the player walks away.
+        // Auto-advance safety net at 12s in case the player walks away.
         window.setTimeout(() => {
           setFeedback((current) => {
             if (!current) return current;
@@ -222,7 +222,7 @@ export default function VocabPoker() {
             dealFreshRound(deck, newHand);
             return null;
           });
-        }, 7000);
+        }, 12000);
       }
     },
     [chips, hand, deck, promptCard, playCorrect, playWrong, endGame, wager]
