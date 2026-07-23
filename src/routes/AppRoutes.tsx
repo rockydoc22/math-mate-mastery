@@ -5,6 +5,7 @@ import { LandingPage } from "@/components/LandingPage";
 import { GlobalFeedbackFAB } from "@/components/GlobalFeedbackFAB";
 import WhatNowFAB from "@/components/global/WhatNowFAB";
 import GlobalStatsBar from "@/components/global/GlobalStatsBar";
+import { BottomNav } from "@/components/BottomNav";
 
 // Core pages loaded eagerly (Home + Auth are always needed)
 import Home from "@/pages/Home";
@@ -315,6 +316,7 @@ const AppRoutes = () => (
     <GlobalFeedbackFAB />
     <WhatNowFAB />
     <GlobalStatsBar />
+    <BottomNav />
   </>
 );
 
