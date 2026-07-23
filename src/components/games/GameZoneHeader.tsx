@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Flame, Trophy, ArrowRight } from "lucide-react";
+import { Flame, Trophy, ArrowRight, RotateCw } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useGameZoneStats, BADGE_TIERS } from "@/hooks/useGameZoneStats";
 
@@ -44,6 +44,15 @@ export function GameZoneHeader({ showSkipLink = true }: Props) {
             Study Dashboard <ArrowRight className="w-3 h-3" />
           </Link>
         )}
+        <button
+          type="button"
+          onClick={() => window.location.reload()}
+          aria-label="Refresh page"
+          title="Refresh page"
+          className="text-muted-foreground hover:text-foreground p-1 rounded-md hover:bg-muted transition-colors"
+        >
+          <RotateCw className="w-4 h-4" />
+        </button>
       </div>
     </div>
   );
