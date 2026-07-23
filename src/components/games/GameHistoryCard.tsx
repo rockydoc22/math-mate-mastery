@@ -21,7 +21,7 @@ const GAME_LABEL: Record<string, string> = {
   poker: "Vocab Poker",
   emoji: "Emoji Decode",
   rapid: "Rapid Fire",
-  anagram: "Anagram Sprint",
+  anagram: "Angel or Demon",
 };
 
 function dayKey(iso: string) {
