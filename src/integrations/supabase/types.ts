@@ -993,6 +993,57 @@ export type Database = {
         }
         Relationships: []
       }
+      mastery_goals: {
+        Row: {
+          completed_at: string | null
+          correct_count: number
+          created_at: string
+          daily_dose: number
+          domain: string | null
+          exam_family: string | null
+          id: string
+          last_dose_at: string | null
+          section: string | null
+          skill: string
+          status: string
+          target: number
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          completed_at?: string | null
+          correct_count?: number
+          created_at?: string
+          daily_dose?: number
+          domain?: string | null
+          exam_family?: string | null
+          id?: string
+          last_dose_at?: string | null
+          section?: string | null
+          skill: string
+          status?: string
+          target?: number
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          completed_at?: string | null
+          correct_count?: number
+          created_at?: string
+          daily_dose?: number
+          domain?: string | null
+          exam_family?: string | null
+          id?: string
+          last_dose_at?: string | null
+          section?: string | null
+          skill?: string
+          status?: string
+          target?: number
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       onboarding_events: {
         Row: {
           created_at: string
