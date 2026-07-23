@@ -18,6 +18,7 @@ import { useQuizTimer } from "@/hooks/useQuizTimer";
 import { DifficultyRange, filterByDifficulty, getDifficultyColor } from "@/utils/difficultyRating";
 import { allTopics } from "@/data/topicCategories";
 import { RatingChangePopup } from "@/components/RatingChangePopup";
+import { supabase } from "@/integrations/supabase/client";
 
 import { shuffleAllQuestionOptions } from "@/utils/optionShuffler";
 import { DesmosCalculator } from "@/components/DesmosCalculator";
