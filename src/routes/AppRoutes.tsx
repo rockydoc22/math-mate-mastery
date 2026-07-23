@@ -169,8 +169,6 @@ const AppRoutes = () => (
       <Route path="/games" element={<GameZone />} />
       <Route path="/games/hangman" element={<GameHangman />} />
       <Route path="/games/poker" element={<GameVocabPoker />} />
-      {/* Legacy path from Wordle Vocab — redirects handled by router below */}
-      <Route path="/games/wordle" element={<GameVocabPoker />} />
       <Route path="/games/emoji" element={<GameEmoji />} />
       <Route path="/games/rapid" element={<GameRapid />} />
       <Route path="/games/anagram" element={<GameAnagram />} />

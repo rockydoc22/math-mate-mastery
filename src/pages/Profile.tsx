@@ -20,6 +20,7 @@ import { FighterCustomizer } from "@/components/FighterCustomizer";
 import { FighterVisual } from "@/components/FighterVisual";
 import { useFighterAvatar } from "@/hooks/useFighterAvatar";
 import { AssessmentHistory } from "@/components/AssessmentHistory";
+import { SEO } from "@/components/SEO";
 
 const AVATAR_OPTIONS = ["😎", "🧑‍🎓", "🦊", "🐱", "🐶", "🦁", "🐼", "🦄", "🚀", "⭐", "🔥", "💎", "👑", "🎯", "🧠", "💪"];
 const THEME_OPTIONS = [
@@ -126,6 +127,12 @@ const Profile = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+      <SEO
+        title="Your Profile — Stats, Streaks, Avatar"
+        description="Manage your AlphaOmega profile: avatar, theme, streaks, skill ratings, and achievements across every test you're studying."
+        path="/profile"
+        noindex
+      />
       <div className="max-w-2xl mx-auto space-y-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">

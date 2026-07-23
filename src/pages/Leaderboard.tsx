@@ -8,6 +8,7 @@ import { ArrowLeft, Trophy, Flame, Medal, Crown, Filter, Swords } from "lucide-r
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import ChallengeModeCard from "@/components/ChallengeModeCard";
 import { UserPerformance } from "@/lib/weeklyChallengeEngine";
+import { SEO } from "@/components/SEO";
 
 interface StreakEntry {
   username: string;
@@ -155,6 +156,11 @@ const Leaderboard = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/10 p-4">
+      <SEO
+        title="Leaderboard — Top Scores & Streaks"
+        description="See top learners on AlphaOmega. Compare quiz scores, streaks, and weekly challenge standings across every test."
+        path="/leaderboard"
+      />
       <div className="max-w-3xl mx-auto space-y-6">
         <div className="flex items-center gap-4">
           <Link to="/"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>

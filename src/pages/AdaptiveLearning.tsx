@@ -6,6 +6,7 @@ import { ArrowLeft, Brain, Zap, Target, RotateCcw, Flame, BookOpen, Sparkles, Tr
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
 import { BottomNav } from "@/components/BottomNav";
+import { SEO } from "@/components/SEO";
 
 interface Recommendation {
   id: string;
@@ -175,6 +176,11 @@ const AdaptiveLearning = () => {
 
   return (
     <div className="min-h-screen bg-background pb-24">
+      <SEO
+        title="What to Study Next — Adaptive Plan"
+        description="Personalized next-step recommendations based on your streaks, weak areas, and recent quiz performance across every test."
+        path="/next-steps"
+      />
       <div className="sticky top-0 z-10 bg-background/95 backdrop-blur border-b border-border px-4 py-3">
         <div className="max-w-2xl mx-auto flex items-center gap-3">
           <Link to="/"><Button variant="ghost" size="icon"><ArrowLeft className="w-5 h-5" /></Button></Link>

@@ -12,6 +12,7 @@ import { useAuth } from "@/hooks/useAuth";
 import { useGameStats } from "@/hooks/useGameStats";
 import { BottomNav } from "@/components/BottomNav";
 import { motion } from "framer-motion";
+import { SEO } from "@/components/SEO";
 
 // Extended achievements beyond the base set
 const ALL_ACHIEVEMENTS: Record<string, { name: string; icon: string; desc: string; category: string; rarity: string }> = {
@@ -83,6 +84,11 @@ const Achievements = () => {
 
   return (
     <div className="min-h-screen bg-background pb-20">
+      <SEO
+        title="Achievements & Badges — Milestones"
+        description="Track every AlphaOmega badge: streaks, perfect scores, fastest solves, and total plays. Unlock rarities from common to legendary."
+        path="/achievements"
+      />
       <div className="max-w-lg mx-auto p-4">
         {/* Header */}
         <div className="flex items-center gap-3 mb-6">

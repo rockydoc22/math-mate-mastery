@@ -128,6 +128,7 @@ const Rulebook = () => {
 
           {/* Error Pattern Statistics */}
           <TabsContent value="patterns">
+            <h2 className="sr-only">Error Patterns</h2>
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
@@ -169,7 +170,7 @@ const Rulebook = () => {
 
                     {missPatterns.length > 0 && (
                       <div className="mt-4 p-4 rounded-lg bg-amber-500/10 border border-amber-500/30">
-                        <h4 className="font-semibold text-sm mb-2">💡 Focus Area</h4>
+                        <h3 className="font-semibold text-sm mb-2">💡 Focus Area</h3>
                         <p className="text-sm text-muted-foreground">
                           Your top error type is <strong>{missPatterns[0].label}</strong>.
                           {missPatterns[0].reason === 'careless' && ' Double-check your work before submitting.'}
@@ -188,6 +189,7 @@ const Rulebook = () => {
 
           {/* Rulebook Notes */}
           <TabsContent value="notes">
+            <h2 className="sr-only">Rulebook Entries</h2>
             <AnimatePresence>
               {loading ? (
                 <div className="flex justify-center py-12">
