@@ -107,9 +107,15 @@ export function useGameSounds() {
     setTimeout(() => tone(700, 0.1, 'sine', 0.2), 60);
   }, [tone]);
 
+  const playBell = useCallback(() => {
+    [1568, 2093, 2637].forEach((f, i) => {
+      setTimeout(() => tone(f, 0.6, 'sine', 0.18), i * 40);
+    });
+  }, [tone]);
+
   return {
     playLaser, playExplosion, playMiss,
     playCorrect, playWrong, playVictory, playDefeat, playCombo,
-    playChessMove, playChessCapture,
+    playChessMove, playChessCapture, playBell,
   };
 }
