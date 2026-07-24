@@ -15,6 +15,8 @@ import { getGameVocabPool, FOCUS_LABEL, GameVocabWord } from "@/data/gameVocabPo
 import { useLearnerContext } from "@/hooks/useLearnerContext";
 import { useGameSounds } from "@/hooks/useGameSounds";
 import hangmanLostPng from "@/assets/hangman-lost.png";
+import { HANGMAN_EXTRA_WORDS } from "@/data/hangmanExtraWords";
+import { getRecentHangmanWords, rememberHangmanWord, HANGMAN_NO_REPEAT_WINDOW } from "@/lib/hangmanRecent";
 
 const MAX_WRONG = 6;
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
@@ -172,11 +174,29 @@ function Gallows({ wrong, dying }: { wrong: number; dying: boolean }) {
   );
 }
 
+/**
+ * Pick a hangman word that hasn't appeared in the last HANGMAN_NO_REPEAT_WINDOW
+ * plays on this device. Combines the student's study pool, curated extra words,
+ * and fun items so the combined pool is comfortably larger than the window.
+ */
 function pickWord(studyPool: GameVocabWord[]): GameVocabWord {
-  const funPool = funWordItems(4);
-  const picked = pickMixed(funPool, studyPool);
-  return picked.item as GameVocabWord;
+  const funPool = funWordItems(4) as unknown as GameVocabWord[];
+  const combined: GameVocabWord[] = [...studyPool, ...HANGMAN_EXTRA_WORDS, ...funPool];
+  const recent = getRecentHangmanWords();
+  const fresh = combined.filter((w) => !recent.has(w.word.toUpperCase()));
+  const source = fresh.length > 0 ? fresh : combined;
+  // Keep the ~30% "fun/extra" bias so the game still feels varied.
+  const useVocab = Math.random() < 0.7 && studyPool.length > 0;
+  const pool = useVocab
+    ? source.filter((w) => studyPool.some((s) => s.word === w.word))
+    : source;
+  const finalPool = pool.length > 0 ? pool : source;
+  const picked = finalPool[Math.floor(Math.random() * finalPool.length)];
+  return picked;
 }
+
+// Silence lint for the now-unused legacy helper import if bundler tree-shakes.
+void pickMixed;
 
 export default function Hangman() {
   const { stats, recordRound } = useGameZoneStats();
@@ -190,6 +210,10 @@ export default function Hangman() {
   const [word, setWord] = useState<GameVocabWord>(() => pickWord(studyPool));
   const [guessed, setGuessed] = useState<Set<string>>(new Set());
   const [finished, setFinished] = useState<null | { win: boolean; points: number }>(null);
+
+  // Remember every word we actually SHOW so the no-repeat window stays honest,
+  // even if the player quits before finishing.
+  useEffect(() => { if (word?.word) rememberHangmanWord(word.word); }, [word]);
   // While `dying` is true we keep the drawn scene on screen (with sway) before
   // swapping to results — gives the loss visual room to breathe.
   const [dying, setDying] = useState(false);
