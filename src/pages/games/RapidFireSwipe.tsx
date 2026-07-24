@@ -13,6 +13,8 @@ import { DailyCreditsBadge } from "@/components/games/DailyCreditsBadge";
 import { rapidFireFacts } from "@/data/satFactsRapidFire";
 import { buildFunRapidPrompt } from "@/data/funContentPool";
 import { useGameSounds } from "@/hooks/useGameSounds";
+import { getGameVocabPool, GameVocabWord } from "@/data/gameVocabPools";
+import { useLearnerContext } from "@/hooks/useLearnerContext";
 
 const ROUND_SECONDS = 30;
 
@@ -45,10 +47,43 @@ interface Review {
   correct: boolean;
 }
 
-function buildPrompt(): Prompt {
-  // 40/60 mix: test-relevant fun trivia vs SAT rapid-fire facts.
-  // (Music/movie/slang items were removed from Rapid Fire — they aged out.)
-  if (Math.random() < 0.4) {
+/**
+ * Build a definition-style T/F prompt from the learner's vocab pool. Half the
+ * time we show the word's real definition, half the time we swap in a random
+ * other word's definition. The learner's pool is chosen to match the exam
+ * they picked (SAT → SAT vocab, MCAT → medical, kid pool if no exam and
+ * under 13).
+ */
+function buildDefinitionPrompt(pool: GameVocabWord[]): Prompt | null {
+  if (!pool || pool.length < 4) return null;
+  const word = pool[Math.floor(Math.random() * pool.length)];
+  const isTrue = Math.random() < 0.5;
+  let shown = word.definition;
+  if (!isTrue) {
+    for (let i = 0; i < 12; i++) {
+      const other = pool[Math.floor(Math.random() * pool.length)];
+      if (other.word !== word.word && other.definition !== word.definition) {
+        shown = other.definition; break;
+      }
+    }
+    if (shown === word.definition) return null; // couldn't find a distractor
+  }
+  return {
+    id: `def-${word.word}-${Date.now()}-${Math.random()}`,
+    text: `"${word.word}" means: ${shown}`,
+    isTrue,
+    answer: word.definition,
+  };
+}
+
+function buildPrompt(vocabPool: GameVocabWord[]): Prompt {
+  const r = Math.random();
+  // 45% definition T/F (the new focus), 25% fun trivia, 30% SAT rapid facts.
+  if (r < 0.45) {
+    const p = buildDefinitionPrompt(vocabPool);
+    if (p) return p;
+  }
+  if (r < 0.70) {
     const fun = buildFunRapidPrompt();
     if (fun) return fun;
   }
@@ -66,31 +101,35 @@ function buildPrompt(): Prompt {
 }
 
 /** Pull a prompt whose stem hasn't been shown yet this session. */
-function nextUniquePrompt(seenStems: Set<string>): Prompt {
+function nextUniquePrompt(seenStems: Set<string>, vocabPool: GameVocabWord[]): Prompt {
   for (let i = 0; i < 20; i++) {
-    const p = buildPrompt();
+    const p = buildPrompt(vocabPool);
     // Dedupe by the underlying fact/prompt stem (strip the "→ answer" suffix
     // and the random id so the same fact can't repeat with a different
     // displayed answer).
-    const stem = p.text.split("→")[0].trim().toLowerCase();
+    const stem = p.text.split(/→|means:/)[0].trim().toLowerCase();
     if (!seenStems.has(stem)) {
       seenStems.add(stem);
       return p;
     }
   }
-  // Ran out of unseen prompts — allow repeats rather than stalling.
-  return buildPrompt();
+  return buildPrompt(vocabPool);
 }
 
 export default function RapidFireSwipe() {
   const { stats, recordRound } = useGameZoneStats();
   const { playCorrect, playWrong, playVictory } = useGameSounds();
+  const { examType, dateOfBirth } = useLearnerContext();
+  const vocabPool = useMemo(
+    () => getGameVocabPool({ examType, dateOfBirth, minLength: 4 }).words,
+    [examType, dateOfBirth]
+  );
   // Rapid Fire has an explicit Start button, so we don't spend on mount —
   // we spend when the player actually starts the timer.
   const { blocked, spendForRestart } = useGameCreditGate({ spendOnMount: false });
   const [started, setStarted] = useState(false);
   const seenStems = useRef<Set<string>>(new Set());
-  const [prompt, setPrompt] = useState<Prompt>(() => nextUniquePrompt(seenStems.current));
+  const [prompt, setPrompt] = useState<Prompt>(() => nextUniquePrompt(seenStems.current, vocabPool));
   const [timeLeft, setTimeLeft] = useState(ROUND_SECONDS);
   const [correct, setCorrect] = useState(0);
   const [wrong, setWrong] = useState(0);
@@ -151,9 +190,9 @@ export default function RapidFireSwipe() {
       }
       setFlash(isCorrect ? "ok" : "no");
       setTimeout(() => setFlash(null), 200);
-      setPrompt(nextUniquePrompt(seenStems.current));
+      setPrompt(nextUniquePrompt(seenStems.current, vocabPool));
     },
-    [started, finished, prompt, playCorrect, playWrong]
+    [started, finished, prompt, playCorrect, playWrong, vocabPool]
   );
 
   useEffect(() => {
@@ -170,7 +209,7 @@ export default function RapidFireSwipe() {
     finishedRef.current = false;
     setStarted(true);
     seenStems.current = new Set();
-    setPrompt(nextUniquePrompt(seenStems.current));
+    setPrompt(nextUniquePrompt(seenStems.current, vocabPool));
     setTimeLeft(ROUND_SECONDS);
     setCorrect(0);
     setWrong(0);

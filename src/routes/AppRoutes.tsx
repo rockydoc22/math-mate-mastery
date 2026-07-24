@@ -160,12 +160,16 @@ const Warmup = lazy(() => import("@/pages/Warmup"));
 const Privacy = lazy(() => import("@/pages/Privacy"));
 const Support = lazy(() => import("@/pages/Support"));
 const Terms = lazy(() => import("@/pages/Terms"));
+const PrecalculusCourse = lazy(() => import("@/pages/PrecalculusCourse"));
+const ExamLanding = lazy(() => import("@/pages/ExamLanding"));
 
 const AppRoutes = () => (
   <>
     <Routes>
       <Route path="/" element={<RootLanding />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/precalc" element={<PrecalculusCourse />} />
+      <Route path="/prep/:exam" element={<ExamLanding />} />
       <Route path="/games" element={<GameZone />} />
       <Route path="/games/hangman" element={<GameHangman />} />
       <Route path="/games/poker" element={<GameVocabPoker />} />
